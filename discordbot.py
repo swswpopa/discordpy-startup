@@ -1280,3 +1280,4 @@ async def on_message(message):
     await submit_attack_log(message, orig_user)
 
 client.run(TOKEN)
+
