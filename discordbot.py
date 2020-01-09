@@ -12,7 +12,7 @@ import jaconv
 # BOTログイントークンさえ入れれば最低限起動します。
 # 正常に動作していると、コンソールに1秒毎に現在時刻が表示されます。
 # 初期設定項目 #########################################################################################################
-TOKEN = 'NjY0NDUyNjE3MTk1MjI1MTI4.XhbUYg.idhRkdCLb6LnEfEGaTkqJxraUA0'  # BOTログイントークン
+TOKEN = 'NjY0NDUyNjE3MTk1MjI1MTI4.XhbW4w.NI917YZ3O_GZs65JZ-mgGpEGsB8'  # BOTログイントークン
 ID_ROLE_ADMIN = 337610874615496704  # 飼い主ロールID（事前設定用）
 ID_CHANNEL_MAIN = 664724026010107919  # 入力用チャンネルID（事前設定用）
 ID_CHANNEL_LOG_MAIN = 664724174161575936  # 凸進捗出力用チャンネルID（事前設定用）
