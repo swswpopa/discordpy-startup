@@ -5,7 +5,6 @@ import asyncio
 import discord
 import jaconv
 import os
-
 #######################################################################################################################
 # プリコネクラバト凸管理用BOT Ver1.0.0 by Toki　Discord:Toki#1901 Twitter@Lunate_sheep
 # Python3.6.x
