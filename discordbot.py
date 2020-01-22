@@ -584,6 +584,7 @@ async def init_react_channel():
         tmp_msg = await react_channel.send(str(i + 1) + "ボス物理　｜" + str(i + 1) + "ボス魔法｜通知")
         for emoji_ID in ID_EMOJI:
             await tmp_msg.add_reaction(client.get_emoji(emoji_ID))
+        Message_Boss_Reaction.append(tmp_msg)
             
     # 秒1行目
     reply = "----------------------------------------\n持越時間入力\n"
