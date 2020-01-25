@@ -230,7 +230,6 @@ async def rollover_by5am():
             Message_Log_Main = None
             is_day_rolled = True
             for p in playerData:
-                p.erase_all()
                 p.erase_backup()
                 await update_incomplete_channel_log()
                 await update_request_channel_log()
