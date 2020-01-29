@@ -1279,7 +1279,7 @@ async def on_message(message):
 
     # 凸登録
     await submit_attack_log(message, orig_user)
-        return
+
     
     # 接続に必要なオブジェクトを生成
     with open("config.json","r") as f:
