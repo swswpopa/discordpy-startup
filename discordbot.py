@@ -29,8 +29,8 @@ JST = timezone(timedelta(hours=+9), 'JST')  # 日本時間設定
 DELAY_S = 3  # メッセージ削除までの時間（短）
 DELAY_M = 30  # メッセージ削除までの時間（中）
 DELAY_L = 60  # メッセージ削除までの時間（長）
-Flg_Setup = False  # 初期設定フラグ
-Flg_Sleep = False  # 休眠フラグ
+Flg_Setup = true  # 初期設定フラグ
+Flg_Sleep = true  # 休眠フラグ
 Flg_No_Emoji = False  # 絵文字未設定フラグ
 Flg_Demo = False  # デモモードフラグ
 Message_Log_Main = None  # 凸進捗出力メッセージオブジェクト
@@ -310,7 +310,7 @@ async def submit_attack_log(message, orig_user):
         # ボス凸先
         boss = int(msg_content[0])
         # 物魔判定
-        atk_type_m = False
+        atk_type_m = True
         if msg_content[1] == '魔' or msg_content[1] == 'm':
             atk_type_m = True
         # 通知設定判定
