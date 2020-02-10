@@ -7,6 +7,7 @@ from datetime import datetime, timedelta, timezone
 import asyncio
 import discord
 import jaconv
+import os
 #######################################################################################################################
 # プリコネクラバト凸管理用BOT Ver1.1.2 (Jan30, 2020) by Toki　Discord:Toki#1901 Twitter@Lunate_sheep
 # Python3.6.x
