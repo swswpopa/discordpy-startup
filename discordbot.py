@@ -1,6 +1,5 @@
 #coding:UTF-8
 import discord
-import async
 from discord.ext import tasks
 from datetime import datetime 
 
