@@ -19,20 +19,43 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def dbd(ctx):
     await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
-
 @bot.command()
 async def pubg(ctx):
-    await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
-    
+    await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')   
 @bot.command()
 async def patora(ctx):
-    await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg')
-    
+    await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg')    
 @bot.command()
 async def suzuhara(ctx):
     await ctx.send('https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
-    
-    
+@bot.command()
+async def peko(ctx):
+    await ctx.send('https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ%27)
+@bot.command()
+async def sion(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCXTpFs_3PqI41qX2d9tL2Rw%27)
+@bot.command()
+async def nanora(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCa9Y57gfeY0Zro_noHRVrnw%27)
+@bot.command()
+async def noeru(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ%27)
+@bot.command()
+async def korone(ctx):
+    await ctx.send('https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q)
+@bot.command()
+async def coco(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w%27)
+@bot.command()
+async def hurea(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCvInZx9h3jC2JzsIzoOebWg%27)
+@bot.command()
+async def miko(ctx):
+    await ctx.send('https://www.youtube.com/channel/UC-hM6YJuNYVAmUWxeIr9FeA%27)  
+@bot.command()
+async def ommc(ctx):
+    await ctx.send('https://www.youtube.com/watch?v=b_PZkJZLfHw%27)
+                   
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
 async def loop():
