@@ -19,6 +19,9 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def dbd(ctx):
     await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
+
+async def pubg(ctx):
+    await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
     
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
