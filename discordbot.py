@@ -11,10 +11,12 @@ CHANNEL_ID = 730136347477540908 #チャンネルID
 client = discord.Client()
 
 @client.event
-async def on_message(message): 
-    if message.content == "ありがとう": 
-    #:(コロン)を忘れずつける
-        await client.send_message(message.channel, "どういたしまして!") 
+        async def on_message(message):
+	if message.author.bot: #自身や他Botの発言に反応しないようにする。
+		return
+    if "ありがと" in message.content:
+	　　　await message.channel.send("どういたしまして！")
+	return
 
 # 60秒に一回ループ
 @tasks.loop(seconds=60)
