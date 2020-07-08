@@ -19,9 +19,10 @@ async def on_command_error(ctx, error):
 async def on_message(message):
 	if message.author.bot: #自身や他Botの発言に反応しないようにする。
 		return
-　　if "ありがと" in message.content:
+　　
+	if message.content.find("ありがと") != -1:
 	await message.channel.send("どういたしまして！")
-	　　return
+		return
 
     # /単語　で受け答え
 @bot.command()
