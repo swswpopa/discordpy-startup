@@ -15,11 +15,6 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
-@client.event
-async def on_message(message):
-	if message.content.startswith("ありがと"):
-	await message.channel.send("どういたしまして！")
-		return
 
     # /単語　で受け答え
 @bot.command()
