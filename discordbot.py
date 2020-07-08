@@ -41,6 +41,9 @@ async def noeru(ctx):
 async def korone(ctx):
     await ctx.send('https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q')
 @bot.command()
+async def pekora(ctx):
+    await ctx.send('https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ')
+@bot.command()
 async def coco(ctx):
     await ctx.send('https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w%27')
 @bot.command()
@@ -52,6 +55,9 @@ async def miko(ctx):
 @bot.command()
 async def ommc(ctx):
     await ctx.send('https://www.youtube.com/watch?v=b_PZkJZLfHw%27')
+@bot.command()
+async def marin(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg)
                    
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
