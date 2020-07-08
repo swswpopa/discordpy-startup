@@ -29,9 +29,6 @@ async def patora(ctx):
 async def suzuhara(ctx):
     await ctx.send('https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
 @bot.command()
-async def peko(ctx):
-    await ctx.send('https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ%27)
-@bot.command()
 async def sion(ctx):
     await ctx.send('https://www.youtube.com/channel/UCXTpFs_3PqI41qX2d9tL2Rw%27)
 @bot.command()
