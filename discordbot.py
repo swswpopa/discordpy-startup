@@ -15,6 +15,23 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
+    # ありがとう返信
+@client.event
+async def on_ready():
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
+
+@client.event
+async def on_message(message):
+    # 「ありがと」というチャットが来た場合のメッセージ
+    if message.content.startswith("やあ"):
+        # 送り主がチャットボット以外なら返事を返す
+        if client.user != message.author:
+            message = "どういたしまして！、" + message.author.name
+            await client.send_message(message.channel, message)    
+    
 
     # /単語　で受け答え
 @bot.command()
