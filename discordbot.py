@@ -19,7 +19,6 @@ async def on_message(message):
 		return
 	if "ありがと" in message.content:
 		await message.channel.send("どういたしまして！")
-	　　　　 return
 
 # 60秒に一回ループ
 @tasks.loop(seconds=60)
