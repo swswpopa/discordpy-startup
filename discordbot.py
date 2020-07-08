@@ -13,25 +13,7 @@ CHANNEL_ID = 730136347477540908 #チャンネルID
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
-    await ctx.send(error_msg)
-
-    # ありがとう返信
-@bot.event
-async def on_ready():
-    print('Logged in as')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
-
-@bot.event
-async def on_message(message):
-    # 「ありがと」というチャットが来た場合のメッセージ
-    if message.content.startswith("やあ"):
-        # 送り主がチャットボット以外なら返事を返す
-        if bot.user != message.author:
-            message = "どういたしまして！、" + message.author.name
-            await bot.send_message(message.channel, message)    
-    
+    await ctx.send(error_msg)    
 
     # /単語　で受け答え
 @bot.command()
