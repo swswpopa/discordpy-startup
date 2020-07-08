@@ -11,21 +11,24 @@ CHANNEL_ID = 730136347477540908 #チャンネルID
 client = discord.Client()
 
 @client.event
-        async def on_message(message):
+async def on_ready():
+    print('ready')
+
+async def on_message(message):
 	if message.author.bot: #自身や他Botの発言に反応しないようにする。
 		return
-    if "ありがと" in message.content:
-	　　　await message.channel.send("どういたしまして！")
-	return
+	if "ありがと" in message.content:
+		await message.channel.send("どういたしまして！")
+	　　　　 return
 
 # 60秒に一回ループ
 @tasks.loop(seconds=60)
 async def loop():
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '05:00':
+	if now == '05:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('日付が変わりました')  
+        	await channel.send('日付が変わりました')  
 
 #ループ処理実行
 loop.start()
