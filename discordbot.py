@@ -20,6 +20,7 @@ async def on_command_error(ctx, error):
 async def dbd(ctx):
     await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
 
+@bot.command()
 async def pubg(ctx):
     await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
     
