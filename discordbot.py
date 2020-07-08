@@ -15,6 +15,14 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
+@client.event
+async def on_message(message):
+	if message.author.bot: #自身や他Botの発言に反応しないようにする。
+		return
+　　if "ありがと" in message.content:
+	await message.channel.send("どういたしまして！")
+	　　return
+
     # /単語　で受け答え
 @bot.command()
 async def jantama(ctx):
