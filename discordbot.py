@@ -17,10 +17,7 @@ async def on_command_error(ctx, error):
 
 @client.event
 async def on_message(message):
-	if message.author.bot: #自身や他Botの発言に反応しないようにする。
-		return
-　　
-	if message.content.find("ありがと") != -1:
+	if message.content.startswith("ありがと"):
 	await message.channel.send("どういたしまして！")
 		return
 
