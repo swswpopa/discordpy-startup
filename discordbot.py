@@ -15,7 +15,7 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
-
+    # /単語　で受け答え
 @bot.command()
 async def dbd(ctx):
     await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
@@ -23,6 +23,15 @@ async def dbd(ctx):
 @bot.command()
 async def pubg(ctx):
     await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
+    
+@bot.command()
+async def patora(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg')
+    
+@bot.command()
+async def suzuhara(ctx):
+    await ctx.send('https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
+    
     
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
