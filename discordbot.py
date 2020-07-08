@@ -9,6 +9,13 @@ TOKEN = os.environ['DISCORD_BOT_TOKEN']
 CHANNEL_ID = 730136347477540908 #チャンネルID
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
+
+@client.event
+async def on_message(message): 
+    if message.content == "ありがとう": 
+    #:(コロン)を忘れずつける
+        await client.send_message(message.channel, "どういたしまして!") 
+
 # 60秒に一回ループ
 @tasks.loop(seconds=60)
 async def loop():
