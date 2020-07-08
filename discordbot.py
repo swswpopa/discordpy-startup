@@ -57,7 +57,7 @@ async def ommc(ctx):
     await ctx.send('https://www.youtube.com/watch?v=b_PZkJZLfHw%27')
 @bot.command()
 async def marin(ctx):
-    await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg)
+    await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg')
                    
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
