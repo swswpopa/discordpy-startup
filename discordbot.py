@@ -17,6 +17,9 @@ async def on_command_error(ctx, error):
 
     # /単語　で受け答え
 @bot.command()
+async def jantama(ctx):
+    await ctx.send('https://game.mahjongsoul.com/')
+@bot.command()
 async def dbd(ctx):
     await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
 @bot.command()
