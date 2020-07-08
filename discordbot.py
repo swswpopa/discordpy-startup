@@ -27,7 +27,7 @@ async def loop():
     now = datetime.now().strftime('%H:%M')
     if now == '05:00':
         channel = client.get_channel(CHANNEL_ID)
-        await channel.send('日付が変わりました！')  
+        await channel.send('日付が変わりました！サポ借りが終わったらこのメッセージにリアクションを付けてください！')  
 
 #ループ処理実行
 loop.start()
