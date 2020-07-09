@@ -4,6 +4,7 @@ import traceback
 from discord.ext import tasks
 from datetime import datetime 
 
+
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 CHANNEL_ID = 730136347477540908 #チャンネルID
