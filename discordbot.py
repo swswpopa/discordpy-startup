@@ -8,7 +8,7 @@ from datetime import datetime
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 CHANNEL_ID = 730136347477540908 #チャンネルID
-
+JST = timezone(timedelta(hours=+9), 'JST')  # 日本時間設定
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -68,7 +68,7 @@ async def marin(ctx):
 async def loop():
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '20:00':
+    if now == '05:00':
         channel = bot.get_channel(CHANNEL_ID)
         await channel.send('日付が変わりました！サポ借りが終わったらこのメッセージにリアクションを付けてください！')  
 
