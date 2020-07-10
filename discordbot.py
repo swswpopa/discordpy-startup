@@ -25,6 +25,9 @@ async def dbd(ctx):
 async def pubg(ctx):
     await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')   
 @bot.command()
+async def roa(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCCVwhI5trmaSxfcze_Ovzfw?view_as=subscriber')
+@bot.command()
 async def patora(ctx):
     await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg')    
 @bot.command()
