@@ -63,7 +63,9 @@ async def marin(ctx):
 @bot.command()
 async def syaruru(ctx):
     await ctx.send('https://www.twitch.tv/syaruru3 \n https://www.youtube.com/channel/UC5SYDKMBeExdFs0ocWiK6xw')
-  
+@bot.command()
+async def peko-ra(ctx):
+    await ctx.send('ぺこーらいつもありがとう！ \n 最近ぺこーらへ感謝するのが日課になりつつあります！ \n 単刀直入に我慢してたこと書いちゃう！ \n ぺこーら愛してるぞおおおお \n (ps.厄介野うさぎだと思われそうですが長文赤スパ失礼！ちなみに読まれてる頃にはあまりの恥ずかしさにユニバーサル大回転ぺこぺこの舞')
                    
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
