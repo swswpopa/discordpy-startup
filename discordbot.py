@@ -75,5 +75,25 @@ async def loop():
 #ループ処理実行
 loop.start()
 
+# 接続に必要なオブジェクトを生成
+client = discord.Client()
+
+# 起動時に動作する処理
+@client.event
+async def on_ready():
+
+# メッセージ受信時に動作する処理
+@client.event
+async def on_message(message):
+    # メッセージ送信者がBotだった場合は無視する
+    if message.author.bot:
+        return
+    # 「ありがと」と発言したら「どういたしまして」が返る処理
+    if message.content == 'ありがと':
+        await message.channel.send('どういたしまして')
+
+# Botの起動とDiscordサーバーへの接続
+client.run(TOKEN)
+
 
 bot.run(token)
