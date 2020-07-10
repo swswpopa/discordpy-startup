@@ -4,11 +4,12 @@ import traceback
 from discord.ext import tasks
 from datetime import datetime, timedelta, timezone
 
-
+client = discord.Client()
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 CHANNEL_ID = 730136347477540908 #チャンネルID
 JST = timezone(timedelta(hours=+9), 'JST')  # 日本時間設定
+
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -62,6 +63,11 @@ async def ommc(ctx):
 @bot.command()
 async def marin(ctx):
     await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg')
+    
+    # 返信
+@bot.command(name="ありがと")
+async def hello(ctx):
+    await ctx.send(f"どういたしまして！{ctx.message.author.name}さん！")
                    
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
