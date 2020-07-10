@@ -63,9 +63,14 @@ async def marin(ctx):
     await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg')
     
     # 返信
-@bot.command(name="こんにちは")
-async def ありがと(ctx):
-    await ctx.send(f"どういたしまして！{ctx.message.author.name}さん！")
+async def on_message(message):
+    if bot.user != message.author:
+        if message.content.startswith("おはよう"):
+            m = "おはようございます" + message.author.name + "さん！"
+            await bot.send_message(message.channel, m)
+        if message.content.startswith("こんにちは"):
+            m = "こんにちは" + message.author.name + "さん！"
+            await bot.send_message(message.channel, m)
     
                    
     # 60秒に一回ループ
