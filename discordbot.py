@@ -67,6 +67,7 @@ async def marin(ctx):
 @bot.command(name="ありがと")
 async def hello(ctx):
     await ctx.send(f"どういたしまして！{ctx.message.author.name}さん！")
+    
                    
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
