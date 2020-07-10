@@ -63,6 +63,7 @@ async def marin(ctx):
     await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg')
     
     # 返信
+@bot.event
 async def on_message(message):
     if bot.user != message.author:
         if message.content.startswith("おはよう"):
