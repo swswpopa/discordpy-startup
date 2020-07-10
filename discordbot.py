@@ -74,7 +74,7 @@ async def hello(ctx):
 async def loop():
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '20:00':
+    if now == '05:00':
         channel = bot.get_channel(CHANNEL_ID)
         await channel.send('日付が変わりました！サポ借りが終わったらこのメッセージにリアクションを付けてください！')  
 
