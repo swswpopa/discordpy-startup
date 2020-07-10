@@ -73,10 +73,10 @@ async def on_message(message):
     if bot.user != message.author:
         if message.content.startswith("おはよう"):
             m = "おはようございます" + message.author.name + "さん！"
-            await bot.send_message(message.channel, m)
+            await message.channel.send(message.channel, m)
         if message.content.startswith("こんにちは"):
             m = "こんにちは" + message.author.name + "さん！"
-            await bot.send_message(message.channel, m)
+            await message.channel.send(message.channel, m)
     
                    
     # 60秒に一回ループ
