@@ -60,7 +60,9 @@ async def ommc(ctx):
 @bot.command()
 async def marin(ctx):
     await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg')
-    
+@bot.command()
+async def syaruru(ctx):
+    await ctx.send('https://www.twitch.tv/syaruru3')
   
                    
     # 60秒に一回ループ
