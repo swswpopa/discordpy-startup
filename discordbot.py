@@ -29,7 +29,7 @@ async def roa(ctx):
     await ctx.send('https://www.youtube.com/channel/UCCVwhI5trmaSxfcze_Ovzfw?view_as=subscriber')
 @bot.command()
 async def patora(ctx):
-    await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg')    
+    await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg \n https://twitter.com/Patra_HNST')    
 @bot.command()
 async def suzuhara(ctx):
     await ctx.send('https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
