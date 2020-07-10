@@ -13,15 +13,6 @@ async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)    
- 
-@bot.event
-async def on_message(message):
-    # メッセージ送信者がBotだった場合は無視する
-    if message.author.bot:
-        return
-    # 「ありがと」と発言したら「どういたしまして」が返る処理
-    if message.content == 'ありがと':
-        await message.channel.send('どういたしまして！')
         
     # /単語　で受け答え
 @bot.command()
