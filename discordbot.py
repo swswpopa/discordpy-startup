@@ -93,7 +93,7 @@ async def on_message(message):
         await message.channel.send('どういたしまして')
 
 # Botの起動とDiscordサーバーへの接続
-client.run(TOKEN)
+client.run(token)
 
 
 bot.run(token)
