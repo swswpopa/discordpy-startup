@@ -64,8 +64,8 @@ async def marin(ctx):
     await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg')
     
     # 返信
-@bot.command(name="ありがと")
-async def hello(ctx):
+@bot.command(name="こんにちは")
+async def ありがと(ctx):
     await ctx.send(f"どういたしまして！{ctx.message.author.name}さん！")
     
                    
