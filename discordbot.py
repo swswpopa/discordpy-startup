@@ -14,12 +14,6 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)    
     
-async def on_ready():
-    print('Logged in as')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
-
     # /単語　で受け答え
 @bot.command()
 async def jantama(ctx):
@@ -67,17 +61,7 @@ async def ommc(ctx):
 async def marin(ctx):
     await ctx.send('https://www.youtube.com/channel/UCCzUftO8KOVkV4wQG1vkUvg')
     
-    # 返信
-@bot.event
-async def on_message(message):
-    if bot.user != message.author:
-        if message.content.startswith("おはよう"):
-            m = "おはようございます" + message.author.name + "さん！"
-            await message.channel.send(message.channel, m)
-        if message.content.startswith("こんにちは"):
-            m = "こんにちは" + message.author.name + "さん！"
-            await message.channel.send(message.channel, m)
-    
+  
                    
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
