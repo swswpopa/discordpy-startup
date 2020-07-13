@@ -4,7 +4,6 @@ import os
 import traceback
 from discord.ext import tasks
 from datetime import datetime
-import random 
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
