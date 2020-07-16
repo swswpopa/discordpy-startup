@@ -81,7 +81,7 @@ async def loop():
     now = datetime.now().strftime('%H:%M')
     if now == '20:00':
         channel = bot.get_channel(CHANNEL_ID)
-        await channel.send('日付が変わりました！サポ借りが終わったらこのメッセージにリアクションを付けてください！')  
+        await channel.send('こんるる～！')  
 
 #ループ処理実行
 loop.start()
