@@ -81,7 +81,13 @@ async def ow(ctx):
     await ctx.send('https://playoverwatch.com/ja-jp/')
 @bot.command()
 async def apex(ctx):
-    await ctx.send('https://www.ea.com/ja-jp/games/apex-legends')    
+    await ctx.send('https://www.ea.com/ja-jp/games/apex-legends') 
+@bot.command()
+async def kaya(ctx):
+    await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731102733188333600/nXasbmNiZdEOItOpeAYD1594378196-1594378480_1.gif')        
+@bot.command()
+async def nyaru(ctx):
+    await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
     
     # 60秒に一回ループ
 @tasks.loop(seconds=60)
