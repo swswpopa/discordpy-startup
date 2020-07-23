@@ -96,7 +96,7 @@ async def loop():
     now = datetime.now().strftime('%H:%M')
     if now == '20:00':
         channel = bot.get_channel(CHANNEL_ID)
-        await channel.send('こんるる～！')  
+        await channel.send('むんっ')  
 
 #ループ処理実行
 loop.start()
