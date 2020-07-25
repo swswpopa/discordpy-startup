@@ -7,7 +7,7 @@ from datetime import datetime
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
-CHANNEL_ID = 730136347477540908 #チャンネルID
+CHANNEL_ID = 726398497384824853 #チャンネルID
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -96,7 +96,7 @@ async def loop():
     now = datetime.now().strftime('%H:%M')
     if now == '20:00':
         channel = bot.get_channel(CHANNEL_ID)
-        await channel.send('むんっ')  
+        await channel.send('日付が変わりました！タスクキルしたらリアクションを付けましょうね')  
 
 #ループ処理実行
 loop.start()
