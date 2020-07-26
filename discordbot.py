@@ -89,11 +89,11 @@ async def nyaru(ctx):
 async def loop():
     # 現在の時刻
     now = datetime.now().strftime('%H:%M')
-    if now == '20:00':
+    if now == '20:10':
         channel = bot.get_channel(CHANNEL_ID)
         await channel.send('日付が変わりました！タスクキルしたらリアクションを付けましょうね')  
-        await add_reaction(emoji=":crab:")
-        
+        await tmp_msg.add_reaction(emoji=":crab:")
+          
 #ループ処理実行
 loop.start()
 
