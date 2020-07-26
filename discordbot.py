@@ -97,7 +97,7 @@ async def loop():
     if now == '20:00':
         channel = bot.get_channel(CHANNEL_ID)
         await channel.send('日付が変わりました！タスクキルしたらリアクションを付けましょうね')  
-
+ 　　　  await message.add_reaction( <:28GachaLose:658077254009749533> )
 #ループ処理実行
 loop.start()
 
