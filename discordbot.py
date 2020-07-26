@@ -9,12 +9,7 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 CHANNEL_ID = 726398497384824853 #チャンネルID
 
-@bot.event
-async def on_command_error(ctx, error):
-    orig_error = getattr(error, "original", error)
-    error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
-    await ctx.send(error_msg)    
-        
+     
     # /単語　で受け答え
 @bot.command()
 async def jantama(ctx):
