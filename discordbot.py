@@ -9,6 +9,12 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 CHANNEL_ID = 726398497384824853 #チャンネルID
 
+
+    # コマンドの削除
+@bot.command()
+async def cmd(ctx):
+    pass 
+    await ctx.message.delete()    
      
     # /単語　で受け答え
 @bot.command()
