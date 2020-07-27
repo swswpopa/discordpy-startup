@@ -7,14 +7,8 @@ from datetime import datetime
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
-CHANNEL_ID = 726398497384824853 #チャンネルID
 
-
-    # コマンドの削除
-@bot.command()
-async def cmd(ctx):
-    pass 
-    await ctx.message.delete()    
+  
      
     # /単語　で受け答え
 @bot.command()
@@ -90,17 +84,6 @@ async def kaya(ctx):
 async def nyaru(ctx):
     await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
     
-    # 60秒に一回ループ
-@tasks.loop(seconds=60)
-async def loop():
-    # 現在の時刻
-    now = datetime.now().strftime('%H:%M')
-    if now == '20:00':
-        channel = bot.get_channel(CHANNEL_ID)
-        await channel.send('日付が変わりました！タスクキルしたらスタンプを付けましょうね')  
-        await tmp_msg.add_reaction(emoji=":crab:")
-          
-#ループ処理実行
-loop.start()
+
 
 bot.run(token)
