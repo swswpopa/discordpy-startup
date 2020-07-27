@@ -84,8 +84,6 @@ async def nyaru(ctx):
 @bot.command()
 async def bga(ctx):
     await ctx.send('https://ja.boardgamearena.com/')
-@bot.command()
-async def bga(ctx):
     await ctx.message.delete()
 
 
