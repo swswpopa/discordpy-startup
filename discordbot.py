@@ -2,7 +2,6 @@ from discord.ext import commands
 import asyncio
 import os
 import traceback
-from discord.ext import tasks
 from datetime import datetime
 
 bot = commands.Bot(command_prefix='/')
