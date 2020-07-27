@@ -91,7 +91,7 @@ async def loop():
     now = datetime.now().strftime('%H:%M')
     if now == '20:00':
         channel = bot.get_channel(CHANNEL_ID)
-        await channel.send('日付が変わりました！タスクキルしたらリアクションを付けましょうね')  
+        await channel.send('日付が変わりました！タスクキルしたらスタンプを付けましょうね')  
         await tmp_msg.add_reaction(emoji=":crab:")
           
 #ループ処理実行
