@@ -88,4 +88,5 @@ async def bga(ctx):
 async def cmd(ctx):
     await ctx.message.delete()
 
+
 bot.run(token)
