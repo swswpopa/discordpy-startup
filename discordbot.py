@@ -7,7 +7,6 @@ from datetime import datetime
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
-  
      
     # /単語　で受け答え
 @bot.command()
