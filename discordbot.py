@@ -87,7 +87,6 @@ async def bga(ctx):
     await ctx.send('https://ja.boardgamearena.com/')
 @bot.command()
 async def cmd(ctx):
-    pass 
     await ctx.message.delete()
 
 bot.run(token)
