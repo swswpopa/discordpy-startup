@@ -52,7 +52,7 @@ async def korone(ctx):
 @bot.command()
 async def pekora(ctx):
     await ctx.send('https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ')    
-　　 await ctx.message.delete()
+    await ctx.message.delete()
 @bot.command()
 async def coco(ctx):
     await ctx.send('https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w%27')
