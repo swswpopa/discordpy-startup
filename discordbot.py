@@ -82,6 +82,9 @@ async def kaya(ctx):
 @bot.command()
 async def nyaru(ctx):
     await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
+@bot.command()
+async def bga(ctx):
+    await ctx.send('https://boardgamearena.com/')
 
     
 bot.run(token)
