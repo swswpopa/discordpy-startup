@@ -83,6 +83,7 @@ async def kaya(ctx):
 async def nyaru(ctx):
     await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
     
-
+#ループ処理実行
+loop.start()
 
 bot.run(token)
