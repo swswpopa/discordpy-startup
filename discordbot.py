@@ -109,6 +109,13 @@ async def nyaru(ctx):
 async def bga(ctx):
     await ctx.send('https://ja.boardgamearena.com/')
     await ctx.message.delete()
+@bot.command()
+async def uranai(ctx):
+     #レスポンスされる運勢のリストを作成
+    unsei = ["大吉", "中吉", "吉", "末吉", "小吉", "凶", "大凶"]
+    choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
+    await ctx.send(choice)
+
 
 
 bot.run(token)
