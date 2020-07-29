@@ -118,6 +118,12 @@ async def uranai(ctx):
     choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
     await ctx.send(choice)
 
+    # プリコネキャラ
+@bot.command()
+async def kurisu(ctx):
+    await ctx.send('https://gyazo.com/de048069903e11341c246ec5f1859cfa')
+    await ctx.message.delete()
+
 @tasks.loop(seconds=60)
 async def loop():
     # 現在の時刻
