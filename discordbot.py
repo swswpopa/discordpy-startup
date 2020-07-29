@@ -123,7 +123,75 @@ async def uranai(ctx):
 async def kurisu(ctx):
     await ctx.send('https://gyazo.com/de048069903e11341c246ec5f1859cfa')
     await ctx.message.delete()
-
+@bot.command()
+async def makoto(ctx):
+    await ctx.send('https://i.gyazo.com/6e1c942142ce952e7b15c8f1aa6e6d73')
+    await ctx.message.delete()
+@bot.command()
+async def muimi(ctx):
+    await ctx.send('https://i.gyazo.com/016e0804ce330f11c6fcf75a60f89277')
+    await ctx.message.delete()
+@bot.command()
+async def tamaki(ctx):
+    await ctx.send('https://i.gyazo.com/ede0b883427fbbe2dbd944d03f0d3030')
+    await ctx.message.delete()     
+@bot.command()
+async def onon(ctx):
+    await ctx.send('https://gyazo.com/9ef7490093e2ce4114fc33b49b68a9f9')
+    await ctx.message.delete()
+@bot.command()
+async def mizuna(ctx):
+    await ctx.send('https://i.gyazo.com/2b2c3b9dc2856a1d55d167bf920af87d')
+    await ctx.message.delete()
+@bot.command()
+async def neneka(ctx):
+    await ctx.send('https://i.gyazo.com/588cb732059044e1be0712694eadcffd')
+    await ctx.message.delete()
+@bot.command()
+async def puripeko(ctx):
+    await ctx.send('https://gyazo.com/0f0514e31d8b6136f87c33184b649b8d')
+    await ctx.message.delete()
+@bot.command()
+async def mizukyaru(ctx):
+    await ctx.send('https://i.gyazo.com/cf8625a0f3fbe7ce5a47f00e2305568a')
+    await ctx.message.delete()
+@bot.command()
+async def purikoro(ctx):
+    await ctx.send('https://gyazo.com/04ffe3e6e434d79c816a837e435c1ff1')
+    await ctx.message.delete()    
+@bot.command()
+async def harokyo(ctx):
+    await ctx.send('https://i.gyazo.com/60d59c64eb5c8a9443bd4de074cc03de')
+    await ctx.message.delete()
+@bot.command()
+async def mizusaren(ctx):
+    await ctx.send('https://gyazo.com/c22d7996cb2d8e91ae7308b53c66d6d4')
+    await ctx.message.delete()
+@bot.command()
+async def nyukkoro(ctx):
+    await ctx.send('https://gyazo.com/c29e006bf82ce2fb0e3b44c06405a9ce')
+    await ctx.message.delete()    
+@bot.command()
+async def haromimi(ctx):
+    await ctx.send('https://i.gyazo.com/7ac405b5917a18c8c68b942e62ec35bf')
+    await ctx.message.delete()
+@bot.command()
+async def bazuru(ctx):
+    await ctx.send('https://i.gyazo.com/87b47efe83e874247b66519ce2caa78b')
+    await ctx.message.delete()
+@bot.command()
+async def kuritika(ctx):
+    await ctx.send('https://i.gyazo.com/d9b5fcdfca2cac56f82cfd1c9feefd9d')
+    await ctx.message.delete()    
+@bot.command()
+async def yuni(ctx):
+    await ctx.send('https://gyazo.com/67a7c23623583779f069e697df22aa23')
+    await ctx.message.delete()
+@bot.command()
+async def rei(ctx):
+    await ctx.send('https://i.gyazo.com/4dd4fbfc1687f4529e2f474a84c7a991')
+    await ctx.message.delete()   
+     
 @tasks.loop(seconds=60)
 async def loop():
     # 現在の時刻
