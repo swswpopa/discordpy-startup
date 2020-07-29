@@ -245,15 +245,17 @@ async def loop():
 loop.start()
 
 @bot.command()
-async def motikosi(boss : int, p1 : int, p2 : int):
+async def motikosi(boss, p1, p2):
+
     #持ち越し発生
     totaldmg = p1 + p2
     if boss < totaldmg:
         cotime = 90 - (90*(boss-p1)/p2) + 20
         await ctx.send(cotime)
 
-
    #エラー処理 
    else:
        await ctx.send("Please enter the correct value")
+     
+     
 bot.run(token)
