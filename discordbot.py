@@ -246,7 +246,7 @@ async def motikosi(boss : int, p1 : int, p2 : int):
     if boss > p1 + p2:
         await ctx.send("倒しとら～ん")
         return
-    await bot.say(90 - (90 * (boss - p1)/p2) + 20)          
+    await ctx.send(90 - (90 * (boss - p1)/p2) + 20)          
           
 #ループ処理実行
 loop.start()
