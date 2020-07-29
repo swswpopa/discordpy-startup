@@ -111,10 +111,6 @@ async def nyaru(ctx):
 async def bga(ctx):
     await ctx.send('https://ja.boardgamearena.com/')
     await ctx.message.delete()
-@bot.command()
-async def command(ctx):
-    await ctx.send('https://ja.boardgamearena.com/')
-    await ctx.message.delete()    
      
 @bot.command()
 async def uranai(ctx):
@@ -221,10 +217,6 @@ async def haromiso(ctx):
     await ctx.send('https://gyazo.com/667afa5b86200885f706cd8cf65e7651')
     await ctx.message.delete()
      
-@bot.command()
-async def popa(ctx):
-    await ctx.send('@popa#0001 ')
-    await ctx.message.delete()
      
 @bot.command()
 async def list(ctx):
