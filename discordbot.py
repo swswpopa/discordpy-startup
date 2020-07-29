@@ -112,6 +112,14 @@ async def bga(ctx):
     await ctx.send('https://ja.boardgamearena.com/')
     await ctx.message.delete()
 @bot.command()
+async def command(ctx):
+    await ctx.send('https://ja.boardgamearena.com/')
+    await ctx.message.delete()
+     
+     
+     
+     
+@bot.command()
 async def uranai(ctx):
      #レスポンスされる運勢のリストを作成
     unsei = ["大吉", "中吉", "吉", "末吉", "小吉", "凶", "大凶"]
@@ -124,8 +132,12 @@ async def kurisu(ctx):
     await ctx.send('https://gyazo.com/de048069903e11341c246ec5f1859cfa')
     await ctx.message.delete()
 @bot.command()
-async def makoto(ctx):
+async def mizumakoto(ctx):
     await ctx.send('https://i.gyazo.com/6e1c942142ce952e7b15c8f1aa6e6d73')
+    await ctx.message.delete()
+@bot.command()
+async def makoto(ctx):
+    await ctx.send('https://i.gyazo.com/016e0804ce330f11c6fcf75a60f89277')
     await ctx.message.delete()
 @bot.command()
 async def muimi(ctx):
@@ -190,6 +202,10 @@ async def yuni(ctx):
 @bot.command()
 async def rei(ctx):
     await ctx.send('https://i.gyazo.com/4dd4fbfc1687f4529e2f474a84c7a991')
+    await ctx.message.delete()
+@bot.command()
+async def command(ctx):
+    await ctx.send('クリス：kurisu \n マコト：makoto \n 水マコト： \n ムイミ：muimi \n タマキ：tamaki \n オノン：onon \n 水菜：mizuna \n ネネカ：neneka \n プリペコ：puripeko \n 水キャル：mizukyaru \n プリコロ：purikoro \n ハロキョ：harokyo \n 水サレン：mizusaren \n ニュッコロ：nyukkoro \n ハロキョ：harokyo \n バズル：bazuru \n クリチカ：kuritika \n ユニ：yuni \n レイ：rei')
     await ctx.message.delete()   
      
 @tasks.loop(seconds=60)
