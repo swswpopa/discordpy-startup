@@ -182,7 +182,7 @@ async def nyukkoro(ctx):
     await ctx.message.delete()    
 @bot.command()
 async def haromimi(ctx):
-    await ctx.send('https://i.gyazo.com/7ac405b5917a18c8c68b942e62ec35bf \n ぴょん ぴょん ぴょこ←ｺｺ')
+    await ctx.send('https://i.gyazo.com/42f21611ee06890d48f4ffd4d38e6476 \n ぴょん ぴょん ぴょこ←ｺｺ')
     await ctx.message.delete()
 @bot.command()
 async def bazuru(ctx):
@@ -203,10 +203,14 @@ async def rei(ctx):
 @bot.command()
 async def suzuna(ctx):
     await ctx.send('https://gyazo.com/15a2a0be53ee6c33ac52b6eae7a063fb')
+    await ctx.message.delete()
+@bot.command()
+async def an(ctx):
+    await ctx.send('https://gyazo.com/4771ba5961617b5d66e8fe2aacdc3562')
     await ctx.message.delete()    
 @bot.command()
 async def list(ctx):
-    await ctx.send('プリコネキャラスキルモーション一覧 \n クリス：kurisu \n マコト：makoto \n 水マコト：mizumakoto \n ムイミ：muimi \n タマキ：tamaki \n オノン：onon \n 水菜：mizuna \n ネネカ：neneka \n プリペコ：puripeko \n 水キャル：mizukyaru \n プリコロ：purikoro \n ハロキョ：harokyo \n 水サレン：mizusaren \n ニュッコロ：nyukkoro \n ハロキョ：harokyo \n バズル：bazuru \n クリチカ：kuritika \n ユニ：yuni \n レイ：rei')
+    await ctx.send('プリコネキャラスキルモーション一覧 \n クリス：kurisu \n マコト：makoto \n 水マコト：mizumakoto \n ムイミ：muimi \n タマキ：tamaki \n オノン：onon \n 水菜：mizuna \n ネネカ：neneka \n プリペコ：puripeko \n 水キャル：mizukyaru \n プリコロ：purikoro \n ハロキョ：harokyo \n 水サレン：mizusaren \n ニュッコロ：nyukkoro \n ハロキョ：harokyo \n バズル：bazuru \n クリチカ：kuritika \n ユニ：yuni \n レイ：rei \n スズナ：suzuna \n アン：an')
     await ctx.message.delete()   
      
 @tasks.loop(seconds=60)
