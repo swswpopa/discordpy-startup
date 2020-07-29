@@ -202,7 +202,7 @@ async def rei(ctx):
     await ctx.message.delete()
 @bot.command()
 async def suzuna(ctx):
-    await ctx.send('https://gyazo.com/8c95eba2d87a7d1bda7ff305c9253f3f')
+    await ctx.send('https://gyazo.com/15a2a0be53ee6c33ac52b6eae7a063fb')
     await ctx.message.delete()    
 @bot.command()
 async def list(ctx):
