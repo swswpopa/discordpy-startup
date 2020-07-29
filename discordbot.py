@@ -116,7 +116,7 @@ async def swb(ctx):
     await ctx.send('http://cdn.gameinn.jp/wp-content/uploads/imgs/2020/03/Dz5PPIn.gif') 
     await ctx.message.delete()
 @bot.command()
-async def (ctx):
+async def yabaiwayo(ctx):
     await ctx.send('https://img.animanch.com/2020/05/1588593715655.gif') 
     await ctx.message.delete()
      
