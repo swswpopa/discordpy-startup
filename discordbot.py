@@ -204,7 +204,7 @@ async def rei(ctx):
     await ctx.send('https://i.gyazo.com/4dd4fbfc1687f4529e2f474a84c7a991')
     await ctx.message.delete()
 @bot.command()
-async def command(ctx):
+async def list(ctx):
     await ctx.send('クリス：kurisu \n マコト：makoto \n 水マコト： \n ムイミ：muimi \n タマキ：tamaki \n オノン：onon \n 水菜：mizuna \n ネネカ：neneka \n プリペコ：puripeko \n 水キャル：mizukyaru \n プリコロ：purikoro \n ハロキョ：harokyo \n 水サレン：mizusaren \n ニュッコロ：nyukkoro \n ハロキョ：harokyo \n バズル：bazuru \n クリチカ：kuritika \n ユニ：yuni \n レイ：rei')
     await ctx.message.delete()   
      
