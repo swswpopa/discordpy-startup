@@ -130,7 +130,7 @@ async def uranai(ctx):
     # プリコネキャラ
 @bot.command()
 async def kurisu(ctx):
-    await ctx.send('https://gyazo.com/de048069903e11341c246ec5f1859cfa')
+    await ctx.send('https://gyazo.com/39f3bddc360ed09f20431c79d809e3fb')
     await ctx.message.delete()
 @bot.command()
 async def mizumakoto(ctx):
