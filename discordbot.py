@@ -241,6 +241,7 @@ async def loop():
         await add_reaction(emoji=":crab:")
 
 # 持越し時間の計算
+@bot.command()
 async def motikosi(boss : int, p1 : int, p2 : int):
     if boss > p1 + p2:
         await ctx.send("倒しとら～ん")
