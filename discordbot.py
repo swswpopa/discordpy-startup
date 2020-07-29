@@ -254,8 +254,8 @@ async def motikosi(boss, p1, p2):
         await ctx.send(cotime)
 
    #エラー処理 
-   else:
-       await ctx.send("Please enter the correct value")
+        else:
+        await ctx.send("Please enter the correct value")
      
      
 bot.run(token)
