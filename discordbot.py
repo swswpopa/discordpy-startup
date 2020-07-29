@@ -111,6 +111,10 @@ async def nyaru(ctx):
 async def bga(ctx):
     await ctx.send('https://ja.boardgamearena.com/')
     await ctx.message.delete()
+@bot.command()
+async def swb(ctx):
+    await ctx.send('http://cdn.gameinn.jp/wp-content/uploads/imgs/2020/03/Dz5PPIn.gif') 
+    await ctx.message.delete()
      
 @bot.command()
 async def uranai(ctx):
