@@ -114,10 +114,7 @@ async def bga(ctx):
 @bot.command()
 async def command(ctx):
     await ctx.send('https://ja.boardgamearena.com/')
-    await ctx.message.delete()
-     
-     
-     
+    await ctx.message.delete()    
      
 @bot.command()
 async def uranai(ctx):
@@ -133,15 +130,15 @@ async def kurisu(ctx):
     await ctx.message.delete()
 @bot.command()
 async def mizumakoto(ctx):
-    await ctx.send('https://i.gyazo.com/6e1c942142ce952e7b15c8f1aa6e6d73')
+    await ctx.send('https://i.gyazo.com/6e1c942142ce952e7b15c8f1aa6e6d73 \n 水が弾けたら')
     await ctx.message.delete()
 @bot.command()
 async def makoto(ctx):
-    await ctx.send('https://i.gyazo.com/016e0804ce330f11c6fcf75a60f89277')
+    await ctx.send('https://i.gyazo.com/016e0804ce330f11c6fcf75a60f89277 \n 黄色の鳴き声が消えたら')
     await ctx.message.delete()
 @bot.command()
 async def muimi(ctx):
-    await ctx.send('https://i.gyazo.com/016e0804ce330f11c6fcf75a60f89277')
+    await ctx.send('https://i.gyazo.com/016e0804ce330f11c6fcf75a60f89277 \n 左斜め後ろに飛んだ時')
     await ctx.message.delete()
 @bot.command()
 async def tamaki(ctx):
@@ -161,7 +158,7 @@ async def neneka(ctx):
     await ctx.message.delete()
 @bot.command()
 async def puripeko(ctx):
-    await ctx.send('https://gyazo.com/0f0514e31d8b6136f87c33184b649b8d')
+    await ctx.send('https://gyazo.com/0f0514e31d8b6136f87c33184b649b8d \n 切った後に剣を振り上げたタイミングでバフ付与')
     await ctx.message.delete()
 @bot.command()
 async def mizukyaru(ctx):
@@ -173,19 +170,19 @@ async def purikoro(ctx):
     await ctx.message.delete()    
 @bot.command()
 async def harokyo(ctx):
-    await ctx.send('https://i.gyazo.com/60d59c64eb5c8a9443bd4de074cc03de')
+    await ctx.send('https://i.gyazo.com/60d59c64eb5c8a9443bd4de074cc03de \n 箒を突き刺した時/放棄を振り終わった後')
     await ctx.message.delete()
 @bot.command()
 async def mizusaren(ctx):
-    await ctx.send('https://gyazo.com/c22d7996cb2d8e91ae7308b53c66d6d4')
+    await ctx.send('https://gyazo.com/c22d7996cb2d8e91ae7308b53c66d6d4 \n 右を向いた時')
     await ctx.message.delete()
 @bot.command()
 async def nyukkoro(ctx):
-    await ctx.send('https://gyazo.com/c29e006bf82ce2fb0e3b44c06405a9ce')
+    await ctx.send('https://gyazo.com/c29e006bf82ce2fb0e3b44c06405a9ce \n 左を向いた時')
     await ctx.message.delete()    
 @bot.command()
 async def haromimi(ctx):
-    await ctx.send('https://i.gyazo.com/7ac405b5917a18c8c68b942e62ec35bf')
+    await ctx.send('https://i.gyazo.com/7ac405b5917a18c8c68b942e62ec35bf \n ぴょん ぴょん ぴょこ←ｺｺ')
     await ctx.message.delete()
 @bot.command()
 async def bazuru(ctx):
@@ -193,11 +190,11 @@ async def bazuru(ctx):
     await ctx.message.delete()
 @bot.command()
 async def kuritika(ctx):
-    await ctx.send('https://i.gyazo.com/d9b5fcdfca2cac56f82cfd1c9feefd9d')
+    await ctx.send('https://i.gyazo.com/d9b5fcdfca2cac56f82cfd1c9feefd9d \n 足元に魔法陣が出たら/tp配布の数字を見る')
     await ctx.message.delete()    
 @bot.command()
 async def yuni(ctx):
-    await ctx.send('https://gyazo.com/67a7c23623583779f069e697df22aa23')
+    await ctx.send('https://gyazo.com/67a7c23623583779f069e697df22aa23 \n どちらもジャンプ着地時')
     await ctx.message.delete()
 @bot.command()
 async def rei(ctx):
