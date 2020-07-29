@@ -240,14 +240,7 @@ async def loop():
         await channel.send('日付が変わりました！タスクキルしたらスタンプを付けましょうね')  
         await add_reaction(emoji=":crab:")
 
-# 持越し時間の計算
-@bot.command()
-async def motikosi(boss : int, p1 : int, p2 : int):
-    if boss > p1 + p2:
-        await ctx.send("倒しとら～ん")
-        return
-    await ctx.send(90 - (90 * (boss - p1)/p2) + 20)          
-          
+      
 #ループ処理実行
 loop.start()
 
