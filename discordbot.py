@@ -206,7 +206,7 @@ async def rei(ctx):
     await ctx.message.delete()
 @bot.command()
 async def suzuna(ctx):
-    await ctx.send('https://gyazo.com/15a2a0be53ee6c33ac52b6eae7a063fb')
+    await ctx.send('https://gyazo.com/0f21de3dba9d6d69dee31ef7991b71fc')
     await ctx.message.delete()
 @bot.command()
 async def an(ctx):
@@ -223,6 +223,10 @@ async def mizumaho(ctx):
 @bot.command()
 async def haromiso(ctx):
     await ctx.send('https://gyazo.com/667afa5b86200885f706cd8cf65e7651')
+    await ctx.message.delete()
+@bot.command()
+async def hiyori(ctx):
+    await ctx.send('https://gyazo.com/0fceb161f3ddeb1807f048271416525f')
     await ctx.message.delete()
      
      
