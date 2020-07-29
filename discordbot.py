@@ -117,6 +117,16 @@ async def uranai(ctx):
     choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
     await ctx.send(choice)
 
-
+@tasks.loop(seconds=60)
+async def loop():
+    # 現在の時刻
+    now = datetime.now().strftime('%H:%M')
+    if now == '20:00':
+        channel = bot.get_channel(CHANNEL_ID)
+        await channel.send('日付が変わりました！タスクキルしたらスタンプを付けましょうね')  
+        await add_reaction(emoji=":crab:")
+                  
+#ループ処理実行
+loop.start()
 
 bot.run(token)
