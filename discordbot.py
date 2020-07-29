@@ -170,7 +170,7 @@ async def purikoro(ctx):
     await ctx.message.delete()    
 @bot.command()
 async def harokyo(ctx):
-    await ctx.send('https://i.gyazo.com/60d59c64eb5c8a9443bd4de074cc03de \n 箒を突き刺した時/放棄を振り終わった後')
+    await ctx.send('https://i.gyazo.com/60d59c64eb5c8a9443bd4de074cc03de \n 箒を突き刺した時/箒を振り終わった後')
     await ctx.message.delete()
 @bot.command()
 async def mizusaren(ctx):
