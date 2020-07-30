@@ -36,18 +36,6 @@ async def suzuhara(ctx):
     await ctx.send('https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
     await ctx.message.delete()
 @bot.command()
-async def sion(ctx):
-    await ctx.send('https://www.youtube.com/channel/UCXTpFs_3PqI41qX2d9tL2Rw%27')
-    await ctx.message.delete()
-@bot.command()
-async def nanora(ctx):
-    await ctx.send('https://www.youtube.com/channel/UCa9Y57gfeY0Zro_noHRVrnw%27')
-    await ctx.message.delete()
-@bot.command()
-async def noeru(ctx):
-    await ctx.send('https://www.youtube.com/channel/UCdyqAaZDKHXg4Ahi7VENThQ%27')
-    await ctx.message.delete()
-@bot.command()
 async def korone(ctx):
     await ctx.send('https://www.youtube.com/channel/UChAnqc_AY5_I3Px5dig3X1Q')
     await ctx.message.delete()
@@ -58,14 +46,6 @@ async def pekora(ctx):
 @bot.command()
 async def coco(ctx):
     await ctx.send('https://www.youtube.com/channel/UCS9uQI-jC3DE0L4IpXyvr6w%27')
-    await ctx.message.delete()
-@bot.command()
-async def hurea(ctx):
-    await ctx.send('https://www.youtube.com/channel/UCvInZx9h3jC2JzsIzoOebWg%27')
-    await ctx.message.delete()
-@bot.command()
-async def miko(ctx):
-    await ctx.send('https://www.youtube.com/channel/UC-hM6YJuNYVAmUWxeIr9FeA%27') 
     await ctx.message.delete()
 @bot.command()
 async def ommc(ctx):
