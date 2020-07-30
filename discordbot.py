@@ -231,7 +231,7 @@ loop.start()
 async def motikosi(ctx, boss: int, p1: int, p2: int):
     
     #持ち越し発生
-    total = p1 + p2    
+    total > boss and p1 < boss and p2 < boss  
     
     if total > boss:
         cotime = 90 - (90*(boss-p1)/p2) + 20
