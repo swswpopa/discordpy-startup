@@ -240,5 +240,5 @@ async def motikosi(ctx, boss: int, p1: int, p2: int):
         text = "持ち越しは発生しません"
     await ctx.send(text)
      
-     
+
 bot.run(token)
