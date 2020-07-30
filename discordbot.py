@@ -252,7 +252,7 @@ async def motikosi(ctx, boss: int, p1: int, p2: int):
 
     #持ち越し発生
     total = p1 + p2
-    if total > boss:
+    if total > boss　&& p1 < total && p2 < total:
         cotime = 90 - (90*(boss-p1)/p2) + 20
         text = "持ち越し時間は" + str(cotime) + "秒です"
     else:
