@@ -256,7 +256,7 @@ async def motikosi(ctx, boss: int, p1: int, p2: int):
         cotime = 90 - (90*(boss-p1)/p2) + 20
         text = "持ち越し時間は" + str(cotime) + "秒です"
     else:
-        text = "持ち越しは発生しません"
+        text = "持ち越しは発生しませんb(^b-)d-☆"
     await ctx.send(text)
      
      
