@@ -254,9 +254,10 @@ async def motikosi(ctx, boss: int, p1: int, p2: int):
     total = p1 + p2
     if total > boss:
         cotime = 90 - (90*(boss-p1)/p2) + 20
-        await ctx.send("持ち越し時間は", cotime, "秒です")
+        text = "持ち越し時間は" + str(cotime) + "秒です"
     else:
-        await ctx.send("持ち越しは発生しません")
+        text = "持ち越しは発生しません"
+    await ctx.send(text)
      
      
 bot.run(token)
