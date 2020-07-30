@@ -248,15 +248,22 @@ async def loop():
 loop.start()
 
 @bot.command()
-async def motikosi(ctx, boss: int, p1: int, p2: int):
-
+async def motikosi(ctx, obj):
+    if isinstance(obj, boss:int, p1:int, p2:int):
     #持ち越し発生
-    total = p1 + p2
-    if total > boss　&& p1 < total && p2 < total:
-        cotime = 90 - (90*(boss-p1)/p2) + 20
-        text = "持ち越し時間は" + str(cotime) + "秒です"
+        total = p1 + p2    
+        
+        if total > boss && p1 < boss && p2 < boss:
+            cotime = 90 - (90*(boss-p1)/p2) + 20
+            text = "持ち越し時間は" + str(cotime) + "秒です"       
+        else:
+            text = "持ち越しは発生しません"
+            
+        
+    #エラー処理 
     else:
-        text = "持ち越しは発生しませんd(^b^)d-☆"
+       text = "/motikosi (ボスの体力) (もう一人の与ダメージ) (自分の与ダメージ)"
+    
     await ctx.send(text)
      
      
