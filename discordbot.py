@@ -214,18 +214,6 @@ async def list(ctx):
     await ctx.send('```プリコネキャラスキルモーション一覧 \n クリス：kurisu \n マコト：makoto \n 水マコト：mizumakoto \n ムイミ：muimi \n タマキ：tamaki \n オノン：onon \n 水菜：mizuna \n ネネカ：neneka \n プリペコ：puripeko \n 水キャル：mizukyaru \n プリコロ：purikoro \n 水サレン：mizusaren \n ニュッコロ：nyukkoro \n ハロキョ：harokyo \n ハロミソ：haromiso \n ハロミミ：haromimi \n バズル：bazuru \n クリチカ：kuritika \n ユニ：yuni \n レイ：rei \n スズナ：suzuna \n アン：an \n ミサト：misato \n 水マホ：mizumaho \n ヒヨリ：hiyori```')
     await ctx.message.delete()   
 
-     
-@tasks.loop(seconds=60)
-async def loop():
-    # 現在の時刻
-    now = datetime.now().strftime('%H:%M')
-    if now == '20:00':
-        channel = bot.get_channel(CHANNEL_ID)
-        await channel.send('日付が変わりました！タスクキルしたらスタンプを付けましょうね')  
-        await add_reaction(emoji=":crab:")
-      
-#ループ処理実行
-loop.start()
 
 @bot.command()
 async def motikosi(ctx, boss: int, p1: int, p2: int):
