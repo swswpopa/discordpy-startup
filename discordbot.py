@@ -249,11 +249,14 @@ loop.start()
 
 @bot.command()
 async def motikosi(ctx, boss: int, p1: int, p2: int):
-
-    #持ち越し発生
-    totaldmg = p1 + p2
-    cotime = 90 - (90*(boss-p1)/p2) + 20
-    await ctx.send(cotime + "秒です")
+        await ctx.send(cotime + "秒です")
+          total = p1 + p2
+    if total > boss:
+        cotime = 90 - (90*(boss-p1)/p2) + 20
+        await ctx.send(cotime)
+        await ctx.send("秒です")
+    else:
+        await ctx.send("持ち越しは発生しません")
      
      
 bot.run(token)
