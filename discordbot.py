@@ -6,8 +6,7 @@ import traceback
 from datetime import datetime
 from discord.ext import tasks
 
-bot = commands.Bot(command_prefix='/', help_command=JapaneseHelpCommand())
-bot.add_cog(Greet(bot=bot))
+
 token = os.environ['DISCORD_BOT_TOKEN']
 
 class Greet(commands.Cog, name='ショートカット'):
@@ -257,5 +256,9 @@ class JapaneseHelpCommand(commands.DefaultHelpCommand):
     def get_ending_note(self):
         return (f"各コマンドの説明: /help <コマンド名>\n"
                 f"各カテゴリの説明: /help <カテゴリ名>\n")     
+
+    
+bot = commands.Bot(command_prefix='/', help_command=JapaneseHelpCommand())
+bot.add_cog(Greet(bot=bot))
 
 bot.run(token)
