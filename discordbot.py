@@ -7,7 +7,8 @@ from datetime import datetime
 from discord.ext import tasks
 
 bot = commands.Bot(command_prefix='/', help_command=help())
-bot.add_cog(Greet(bot=bot))
+bot.add_cog(scCog(bot))
+bot.add_cog(AdminCog(bot))
 token = os.environ['DISCORD_BOT_TOKEN']
 
      
