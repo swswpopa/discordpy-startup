@@ -250,7 +250,7 @@ async def motikosi(ctx, boss: int, p1: int, p2: int):
         text = "持ち越しは発生しません"
     await ctx.send(text)
 
-class JapaneseHelpCommand(commands.DefaultHelpCommand):
+class Help(commands.Cog, name='管理者用'):
     def __init__(self):
         super().__init__()
         self.commands_heading = "コマンド:"
@@ -264,6 +264,6 @@ class JapaneseHelpCommand(commands.DefaultHelpCommand):
     
 bot.add_cog(Greet(bot=bot))
 bot.add_cog(pripri(bot=bot))
-bot.add_cog(JapaneseHelpCommand(bot=bot))
+bot.add_cog(Help(bot=bot))
 
 bot.run(token)
