@@ -6,11 +6,14 @@ import traceback
 from datetime import datetime
 from discord.ext import tasks
 
-bot = commands.Bot(command_prefix='/', help_command=help())
-bot.add_cog(scCog(bot))
-bot.add_cog(AdminCog(bot))
+bot = commands.Bot(command_prefix='/', help_command=JapaneseHelpCommand())
+bot.add_cog(Greet(bot=bot))
 token = os.environ['DISCORD_BOT_TOKEN']
 
+class Greet(commands.Cog, name='ショートカット'):
+    def __init__(self, bot):
+        super().__init__()
+        self.bot = bot
      
     # /単語　で受け答え
 @bot.command(name="じゃんたま")
@@ -101,6 +104,11 @@ async def uranai(ctx):
     choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
     await ctx.send(choice)
 
+class Greet(commands.Cog, name='プリコネキャラモーション'):
+    def __init__(self, bot):
+        super().__init__()
+        self.bot = bot
+     
     # プリコネキャラ
 @bot.command(name="クリス")
 async def kurisu(ctx):
@@ -238,6 +246,16 @@ async def motikosi(ctx, boss: int, p1: int, p2: int):
     else:
         text = "持ち越しは発生しません"
     await ctx.send(text)
-     
+
+class JapaneseHelpCommand(commands.DefaultHelpCommand):
+    def __init__(self):
+        super().__init__()
+        self.commands_heading = "コマンド:"
+        self.no_category = "その他"
+        self.command_attrs["help"] = "コマンド一覧と簡単な説明を表示"
+
+    def get_ending_note(self):
+        return (f"各コマンドの説明: /help <コマンド名>\n"
+                f"各カテゴリの説明: /help <カテゴリ名>\n")     
 
 bot.run(token)
