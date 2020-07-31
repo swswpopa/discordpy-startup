@@ -20,6 +20,11 @@ async def jantama(ctx):
     await ctx.send('https://game.mahjongsoul.com/')
     await ctx.message.delete()
 @bot.command()
+async def mamono(ctx):
+    """FARADの青春"""
+    await ctx.send('http://kurobine.sakura.ne.jp/mamonogirllover/zukan/index.html')
+    await ctx.message.delete()
+@bot.command()
 async def dbd(ctx):
     """DbDストアページ"""
     await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
