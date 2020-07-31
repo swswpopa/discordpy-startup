@@ -6,7 +6,7 @@ import traceback
 from datetime import datetime
 from discord.ext import tasks
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='/', help_command=None)
 token = os.environ['DISCORD_BOT_TOKEN']
 
      
