@@ -103,7 +103,7 @@ async def uranai(ctx):
     choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
     await ctx.send(choice)
 
-class Greet(commands.Cog, name='プリコネキャラモーション'):
+class pripri(commands.Cog, name='プリコネキャラモーション'):
     def __init__(self, bot):
         super().__init__()
         self.bot = bot
@@ -263,5 +263,7 @@ class JapaneseHelpCommand(commands.DefaultHelpCommand):
 
     
 bot.add_cog(Greet(bot=bot))
+bot.add_cog(pripri(bot=bot))
+bot.add_cog(JapaneseHelpCommand(bot=bot))
 
 bot.run(token)
