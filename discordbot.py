@@ -6,7 +6,7 @@ import traceback
 from datetime import datetime
 from discord.ext import tasks
 
-bot = commands.Bot(command_prefix='/', help_command=JapaneseHelpCommand())
+bot = commands.Bot(command_prefix='/')
 bot.add_cog(Greet(bot=bot))
 token = os.environ['DISCORD_BOT_TOKEN']
 
