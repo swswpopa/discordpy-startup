@@ -234,7 +234,11 @@ async def hiyori(ctx):
     """ヒヨリ"""
     await ctx.send('https://gyazo.com/0fceb161f3ddeb1807f048271416525f')
     await ctx.message.delete()
-
+@bot.command()
+async def mizuhatsune(ctx):
+    """ハツネ(サマー)"""
+    await ctx.send('https://gyazo.com/84891d66caf2de0092a9041020d9145e')
+    await ctx.message.delete()  
 
 @bot.command()
 async def motikosi(ctx, boss: int, p1: int, p2: int):
