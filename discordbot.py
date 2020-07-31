@@ -9,7 +9,7 @@ from discord.ext import tasks
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
-class Greet(bot.Cog, name='ショートカット'):
+class Greet(commands.Cog, name='ショートカット'):
     def __init__(self, bot):
         super().__init__()
         self.bot = bot
@@ -103,7 +103,7 @@ async def uranai(ctx):
     choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
     await ctx.send(choice)
 
-class Greet(bot.Cog, name='プリコネキャラモーション'):
+class Greet(commands.Cog, name='プリコネキャラモーション'):
     def __init__(self, bot):
         super().__init__()
         self.bot = bot
