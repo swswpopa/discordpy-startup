@@ -99,6 +99,13 @@ async def uranai(ctx):
     choice = random.choice(unsei) #randomモジュールでunseiリストからランダムに一つを選出
     await ctx.send(choice)
 
+@bot.command()
+async def janken(ctx):
+    """じゃんけん"""
+     #レスポンスされる運勢のリストを作成
+    janken = ["グー", "チョキ", "パー"]
+    choice = random.choice(janken) #randomモジュールでunseiリストからランダムに一つを選出
+    await ctx.send(choice)
      
     # プリコネキャラ
 @bot.command()
