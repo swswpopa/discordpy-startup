@@ -234,12 +234,17 @@ async def mizuhatsune(ctx):
 
 @bot.command()
 async def motikosi(ctx, boss: int, p1: int, p2: int):
-    """持越し時間計算機"""
-    if total > boss:
+    """持越し時間計算機 /motikosi (ボス体力) (もう一人の与ダメージ) (自分の与ダメージ)"""
+    if total > boss and p1 < boss and p2 < boss:
         cotime = 90 - (90*(boss-p1)/p2) + 20
         text = "持ち越し時間は" + str(cotime) + "秒です"       
     else:
         text = "持ち越しは発生しません"
     await ctx.send(text)
+
+
+
+
+
 
 bot.run(token)
