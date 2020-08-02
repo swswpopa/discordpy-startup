@@ -231,12 +231,12 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def kaya(self,ctx):
         """ドラゴンズエンドフィ.gif"""
-        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://cdn.discordapp.com/attachments/620957812247363594/731102733188333600/nXasbmNiZdEOItOpeAYD1594378196-1594378480_1.gif')   
+        await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731102733188333600/nXasbmNiZdEOItOpeAYD1594378196-1594378480_1.gif')   
         await ctx.message.delete()     
     @commands.command()
     async def nyaru(self,ctx):
         """ニューイヤーバースト"""
-        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
+        await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
         await ctx.message.delete()
     @commands.command()
     async def bga(self,ctx):
@@ -246,12 +246,12 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def swb(self,ctx):
         """サマーウルフェンブリッツ.gif"""
-        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'http://cdn.gameinn.jp/wp-content/uploads/imgs/2020/03/Dz5PPIn.gif') 
+        await ctx.send('http://cdn.gameinn.jp/wp-content/uploads/imgs/2020/03/Dz5PPIn.gif') 
         await ctx.message.delete()
     @commands.command()
     async def yabaiwayo(self,ctx):
         """ヤバいわよ.gif"""
-        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://img.animanch.com/2020/05/1588593715655.gif') 
+        await ctx.send('https://img.animanch.com/2020/05/1588593715655.gif') 
         await ctx.message.delete()
 
 
