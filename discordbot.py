@@ -8,10 +8,6 @@ from discord.ext import tasks
 
 prefix = '/'
 token = os.environ['DISCORD_BOT_TOKEN']
-DELAY_S = 3
-DELAY_M = 30
-DELAY_L = 60
-
 
         # プリコネキャラ
 class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
@@ -181,7 +177,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     async def jantama(self,ctx):
         """じゃんたま公式HP"""
         await ctx.send('https://game.mahjongsoul.com/')
-        await ctx.message.delete(message, reply, DELAY_S)
+        await ctx.message.delete()
     @commands.command()
     async def dbd(self,ctx):
         """DbDストアページ"""
