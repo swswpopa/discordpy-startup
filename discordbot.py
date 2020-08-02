@@ -179,7 +179,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     async def jantama(self,ctx):
         """じゃんたま公式HP"""
         await ctx.send('https://game.mahjongsoul.com/')
-        await ctx.message.delete()
+        await ctx.message.delete({ timeout: 1000 })
     @commands.command()
     async def dbd(self,ctx):
         """DbDストアページ"""
