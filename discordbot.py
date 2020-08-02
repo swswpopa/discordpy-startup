@@ -181,27 +181,27 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def dbd(self,ctx):
         """DbDストアページ"""
-        await ctx.send('https://store.steampowered.com/app/381210/Dead_by_Daylight/')
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://store.steampowered.com/app/381210/Dead_by_Daylight/')
         await ctx.message.delete()
     @commands.command()
     async def pubg(self,ctx):
         """pubuストアページ"""
-        await ctx.send('https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
         await ctx.message.delete()
     @commands.command()
     async def patora(self,ctx):
         """周防パトラ"""
-        await ctx.send('https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg \n https://twitter.com/Patra_HNST') 
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg \n https://twitter.com/Patra_HNST') 
         await ctx.message.delete()
     @commands.command()
     async def suzuhara(self,ctx):
         """鈴原るる"""
-        await ctx.send('https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://www.youtube.com/channel/UC_a1ZYZ8ZTXpjg9xUY9sj8w')
         await ctx.message.delete()
     @commands.command()
     async def syaruru(self,ctx):
         """しゃるる"""
-        await ctx.send('https://www.twitch.tv/syaruru3 \n https://www.youtube.com/channel/UC5SYDKMBeExdFs0ocWiK6xw')
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://www.twitch.tv/syaruru3 \n https://www.youtube.com/channel/UC5SYDKMBeExdFs0ocWiK6xw')
         await ctx.message.delete()
     @commands.command()
     async def pekorakopipe(self,ctx):
@@ -211,47 +211,47 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def l4d2(self,ctx):
         """l4d2ストアページ"""
-        await ctx.send('https://store.steampowered.com/app/550/Left_4_Dead_2/')
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://store.steampowered.com/app/550/Left_4_Dead_2/')
         await ctx.message.delete()
     @commands.command()
     async def kogatan(self,ctx):
         """月岡恋鐘フィギュア"""
-        await ctx.send('月岡恋鐘フィギュアが予約開始！予約はこちらから！↓↓↓ \n https://www.goodsmile.info/ja/product/9770/%E6%9C%88%E5%B2%A1%E6%81%8B%E9%90%98+%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%82%AA%E3%83%96%E3%83%88%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BCVer.html')
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + '月岡恋鐘フィギュアが予約開始！予約はこちらから！↓↓↓ \n https://www.goodsmile.info/ja/product/9770/%E6%9C%88%E5%B2%A1%E6%81%8B%E9%90%98+%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%82%AA%E3%83%96%E3%83%88%E3%83%AC%E3%82%B8%E3%83%A3%E3%83%BCVer.html')
         await ctx.message.delete()
     @commands.command()
     async def ow(self,ctx):
         """クソゲ"""
-        await ctx.send('https://playoverwatch.com/ja-jp/')
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://playoverwatch.com/ja-jp/')
         await ctx.message.delete()
     @commands.command()
     async def apex(self,ctx):
         """apex公式"""
-        await ctx.send('https://www.ea.com/ja-jp/games/apex-legends') 
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://www.ea.com/ja-jp/games/apex-legends') 
         await ctx.message.delete()
     @commands.command()
     async def kaya(self,ctx):
         """ドラゴンズエンドフィ.gif"""
-        await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731102733188333600/nXasbmNiZdEOItOpeAYD1594378196-1594378480_1.gif')   
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://cdn.discordapp.com/attachments/620957812247363594/731102733188333600/nXasbmNiZdEOItOpeAYD1594378196-1594378480_1.gif')   
         await ctx.message.delete()     
     @commands.command()
     async def nyaru(self,ctx):
         """ニューイヤーバースト"""
-        await ctx.send('https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://cdn.discordapp.com/attachments/620957812247363594/731098724406919179/image0.gif')  
         await ctx.message.delete()
     @commands.command()
     async def bga(self,ctx):
         """ボードゲームアリーナ"""
-        await ctx.send('https://ja.boardgamearena.com/')
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://ja.boardgamearena.com/')
         await ctx.message.delete()
     @commands.command()
     async def swb(self,ctx):
         """サマーウルフェンブリッツ.gif"""
-        await ctx.send('http://cdn.gameinn.jp/wp-content/uploads/imgs/2020/03/Dz5PPIn.gif') 
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'http://cdn.gameinn.jp/wp-content/uploads/imgs/2020/03/Dz5PPIn.gif') 
         await ctx.message.delete()
     @commands.command()
     async def yabaiwayo(self,ctx):
         """ヤバいわよ.gif"""
-        await ctx.send('https://img.animanch.com/2020/05/1588593715655.gif') 
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://img.animanch.com/2020/05/1588593715655.gif') 
         await ctx.message.delete()
 
 
