@@ -176,7 +176,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def jantama(self,ctx):
         """じゃんたま公式HP"""
-        await ctx.send('https://game.mahjongsoul.com/')
+        await ctx.send(ctx.message.author.name + 'https://game.mahjongsoul.com/')
         await ctx.message.delete()
     @commands.command()
     async def dbd(self,ctx):
