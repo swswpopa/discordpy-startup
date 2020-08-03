@@ -157,7 +157,7 @@ class DamageCalc(commands.Cog, name = '持ち越し計算機'):
 
     @commands.command()
     async def motikosi(self,ctx, boss: int, p1: int, p2: int):
-        """持越し時間計算機 /motikosi (ボス体力) (もう一人の与ダメージ) (自分の与ダメージ)"""
+        """持越し時間計算機 /motikosi (凸時のボスHP) (先に抜ける人の与ダメ) (後に抜ける人の与ダメ)"""
         total = p1 + p2
         if total > boss and p1 < boss and p2 < boss:
             cotime = 90 - (90*(boss-p1)/p2) + 20
