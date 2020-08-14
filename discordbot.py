@@ -253,7 +253,12 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """ヤバいわよ.gif"""
         await ctx.send('https://img.animanch.com/2020/05/1588593715655.gif') 
         await ctx.message.delete()
-
+        
+    @commands.command()
+    async def supusi(self,ctx):
+        """プリコネスプシ"""
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://docs.google.com/spreadsheets/d/1nCdtFHS-60WcRZDx8hTXHFm3mPuEqefntQxeRfM2Lv0/edit#gid=632518118')
+        await ctx.message.delete()
 
 class Game(commands.Cog, name = 'おもちゃ'):
 
