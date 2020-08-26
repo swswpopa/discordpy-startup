@@ -151,8 +151,14 @@ class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
     @commands.command()
     async def mizutama(self,ctx):
         """タマキ(サマー)"""
-        await ctx.send('https://i.gyazo.com/c85a5095b0f4043ae664c00238c2d50b \n https://i.gyazo.com/dec9bf6c41a634b381d9214327079614')
+        await ctx.send('https://gyazo.com/b83b2ad4e9e769321a66749da3a59466')
+        await ctx.message.delete() 
+    @commands.command()
+    async def mizutama(self,ctx):
+        """ミヤコ(ハロウィン)"""
+        await ctx.send('https://gyazo.com/f95a085630f753ee75f89bd666588484')
         await ctx.message.delete()  
+
 
 
 class DamageCalc(commands.Cog, name = '持ち越し計算機'):
