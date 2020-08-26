@@ -2,6 +2,7 @@ from discord.ext import commands
 import asyncio
 import random
 import os
+import math
 import traceback
 from datetime import datetime
 from discord.ext import tasks
@@ -161,7 +162,7 @@ class DamageCalc(commands.Cog, name = '持ち越し計算機'):
         total = p1 + p2
         if total > boss and p1 < boss and p2 < boss:
             cotime = 90 - (90*(boss-p1)/p2) + 20
-            text = "持ち越し時間は" + str(cotime) + "秒です"       
+            text = "持ち越し時間は" + str(math.ceil(cotime)) + "秒です"       
         else:
             text = "持ち越しは発生しません"
         await ctx.send(text)
