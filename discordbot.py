@@ -163,6 +163,11 @@ class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
         """ヒヨリ(ニューイヤー)"""
         await ctx.send('https://gyazo.com/fc9f5b592ccfabd7a138977e6d97e774')
         await ctx.message.delete() 
+    @commands.command()
+    async def tieru(self,ctx):
+        """チエル"""
+        await ctx.send('https://gyazo.com/828212c3cc6121942c37c8788425d5d2')
+        await ctx.message.delete() 
 
 
 class DamageCalc(commands.Cog, name = '持ち越し計算機'):
@@ -181,6 +186,16 @@ class DamageCalc(commands.Cog, name = '持ち越し計算機'):
         else:
             text = "持ち越しは発生しません"
         await ctx.send(text)
+    async def gyakusan(self,ctx, boss: int, p1: int):
+        """90秒計算機 /motikosi (凸時のボスHP) (先に抜ける人の与ダメ)"""
+        
+        if p1 < boss:
+            codamage = 9*(boss-p1)/2
+            text = str(math.ceil(codamage)) + "ダメージ以上なら９０秒持ち越します"       
+        else:
+            text = "持ち越しは発生しません"
+        await ctx.send(text)
+        
 
 
 class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
