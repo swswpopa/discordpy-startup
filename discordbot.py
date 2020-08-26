@@ -151,7 +151,7 @@ class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
     @commands.command()
     async def mizutama(self,ctx):
         """タマキ(サマー)"""
-        await ctx.send('https://gyazo.com/c85a5095b0f4043ae664c00238c2d50b \n https://gyazo.com/dec9bf6c41a634b381d9214327079614')
+        await ctx.send('https://i.gyazo.com/c85a5095b0f4043ae664c00238c2d50b \n https://i.gyazo.com/dec9bf6c41a634b381d9214327079614')
         await ctx.message.delete()  
 
 
