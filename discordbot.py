@@ -284,6 +284,11 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """ヤバいわよ.gif"""
         await ctx.send('https://img.animanch.com/2020/05/1588593715655.gif') 
         await ctx.message.delete()
+    @commands.command()
+    async def ron(self,ctx):
+        """ケインコスギの物まね"""
+        await ctx.send('https://www.youtube.com/watch?v=ZX5ctEzgbpw') 
+        await ctx.message.delete()     
         
     @commands.command()
     async def supusi(self,ctx):
