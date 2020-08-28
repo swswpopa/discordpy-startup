@@ -295,6 +295,12 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """プリコネスプシ"""
         await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://docs.google.com/spreadsheets/d/1nCdtFHS-60WcRZDx8hTXHFm3mPuEqefntQxeRfM2Lv0/edit#gid=632518118')
         await ctx.message.delete()
+        
+    @commands.command()
+    async def howa(self,ctx):
+        """ほわさんを呼び出す"""
+        await ctx.send(ctx.message.author.name + "さんが" + 'howa910#6273'　+ "を呼んでいるよ！" )
+        await ctx.message.delete()
 
 class Game(commands.Cog, name = 'おもちゃ'):
 
