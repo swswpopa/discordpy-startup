@@ -10,7 +10,6 @@ from discord.ext import tasks
 prefix = '/'
 token = os.environ['DISCORD_BOT_TOKEN']
 
-client = discord.Client()
         # プリコネキャラ
 class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
 
@@ -324,14 +323,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         janken = ["グー", "チョキ", "パー"]
         choice = random.choice(janken) #randomモジュールでunseiリストからランダムに一つを選出
         await ctx.send(choice)
-        
-    @client.event
-    async def on_message(message):
-    if message.content.startswith("/dice"): 
-        if client.user != message.author:
-            num_random = random.randrange(1,100)
-            m = str(num_random)
-            await client.send_message(message.channel, m)    
+
 
 bot = commands.Bot(command_prefix=prefix)
 bot.add_cog(SkillMotionGIF(bot=bot))
