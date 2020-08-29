@@ -204,6 +204,8 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     def __init__(self, bot):
         super().__init__()
         self.bot = bot
+        
+        
 
     @commands.command()
     async def jantama(self,ctx):
@@ -302,6 +304,31 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """ほわさんを呼び出す"""
         await ctx.send(ctx.message.author.name + 'が <@!260693854070505472> 様を呼んでいるよ！ \n https://cdn.discordapp.com/attachments/628175073504788491/748931470055309322/image0.jpg' )
         await ctx.message.delete()
+    @commands.command()
+    async def sarunokuruma(self,ctx):
+        """さるさんが以前乗っていたくるま"""
+        await ctx.send('https://twitter.com/i/status/1229349521227837441' )
+        await ctx.message.delete()
+    @commands.command()
+    async def ritoriri(self,ctx):
+        """リトルリリカルの星６UB"""
+        await ctx.send('https://cdn.discordapp.com/attachments/668715128627396640/749213006784888842/image0.png' )
+        await ctx.message.delete()
+    @commands.command()
+    async def madoka(self,ctx):
+        """お前樋口円香わかってなさすぎるだろ"""
+        await ctx.send('https://media.discordapp.net/attachments/668715128627396640/749213459954270208/image0.jpg' )
+        await ctx.message.delete()
+    
+    
+    @commands.command()
+    async def howa(self,ctx):
+        """さるさんが以前乗っていたくるま"""
+        await ctx.send('https://twitter.com/i/status/1229349521227837441' )
+        await ctx.message.delete()
+   
+        
+        
 
 class Game(commands.Cog, name = 'おもちゃ'):
 
