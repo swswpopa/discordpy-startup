@@ -300,7 +300,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def howa(self,ctx):
         """ほわさんを呼び出す"""
-        await ctx.send(ctx.message.author.name + 'さんが <@!260693854070505472> を呼んでいるよ！ \n https://cdn.discordapp.com/attachments/628175073504788491/748931470055309322/image0.jpg' )
+        await ctx.send(ctx.message.author.name + 'が <@!260693854070505472> 様を呼んでいるよ！ \n https://cdn.discordapp.com/attachments/628175073504788491/748931470055309322/image0.jpg' )
         await ctx.message.delete()
 
 class Game(commands.Cog, name = 'おもちゃ'):
