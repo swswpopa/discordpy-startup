@@ -301,9 +301,9 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         
     @commands.command()
     async def howa(self,ctx):
-        """ほわさんを呼び出す"""
+        """ほわさんを呼び出す<@!260693854070505472>"""
         howa = ['https://gyazo.com/2e64e20055545d61110c008050a8a016','https://gyazo.com/8d95c633faaf0a589631241d2274703f','https://gyazo.com/3e655e7f91e586737bdd22e3d2964dcc','https://gyazo.com/572820a2a4a350187563528143aa1f28','https://gyazo.com/b17a7733d777762ba75a3c9ed8bd9a47','https://media.discordapp.net/attachments/628175073504788491/748931562325803038/image0.png']
-        await ctx.send(ctx.message.author.name + 'が <@!260693854070505472> 様を呼んでいるよ！ \n ' + random.choice(howa) )
+        await ctx.send(ctx.message.author.name + 'が  様を呼んでいるよ！ \n ' + random.choice(howa) )
         await ctx.message.delete()
     @commands.command()
     async def sarunokuruma(self,ctx):
