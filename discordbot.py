@@ -319,6 +319,11 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """お前樋口円香わかってなさすぎるだろ"""
         await ctx.send('https://media.discordapp.net/attachments/668715128627396640/749213459954270208/image0.jpg' )
         await ctx.message.delete()
+    @commands.command()
+    async def waruine(self,ctx):
+        """わるいね収容者リスト"""
+        await ctx.send('https://twitter.com/i/lists/1227212620387643392' )
+        await ctx.message.delete()
     
     
 
