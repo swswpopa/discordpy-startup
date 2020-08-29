@@ -292,10 +292,11 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """ケインコスギの物まね"""
         await ctx.send('https://www.youtube.com/watch?v=ZX5ctEzgbpw') 
         await ctx.message.delete()     
+    
         
     @commands.command()
     async def tinpokopon(self,ctx):
-        """プリコネスプシ"""
+        """ちんぽこぽん"""
         await ctx.send('https://cdn.discordapp.com/attachments/638718958819606549/749276683302862891/pokopon.gif')
         await ctx.message.delete()
     @commands.command()
