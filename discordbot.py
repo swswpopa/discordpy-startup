@@ -10,6 +10,8 @@ from discord.ext import tasks
 prefix = '/'
 token = os.environ['DISCORD_BOT_TOKEN']
 
+ID_rock = '<:31lolgoo:666949640955887628> '
+
         # プリコネキャラ
 class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
 
@@ -320,7 +322,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
     async def janken(self,ctx):
         """じゃんけん"""
         #レスポンスされる運勢のリストを作成
-        janken = ["グー", "チョキ", "パー"]
+        janken = ["ID_rock", "✌️ ", "🖐️"]
         choice = random.choice(janken) #randomモジュールでunseiリストからランダムに一つを選出
         await ctx.send(choice)
 
