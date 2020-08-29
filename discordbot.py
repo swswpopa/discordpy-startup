@@ -307,7 +307,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def sarunokuruma(self,ctx):
         """さるさんが以前乗っていたくるま"""
-        await ctx.send('https://t.co/HREQukOult' )
+        await ctx.send('https://twitter.com/i/status/1229349521227837441' )
         await ctx.message.delete()
     @commands.command()
     async def ritoriri(self,ctx):
@@ -321,11 +321,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.message.delete()
     
     
-    @commands.command()
-    async def howa(self,ctx):
-        """さるさんが以前乗っていたくるま"""
-        await ctx.send('https://twitter.com/i/status/1229349521227837441' )
-        await ctx.message.delete()
+
    
         
         
