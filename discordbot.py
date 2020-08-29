@@ -302,7 +302,14 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def howa(self,ctx):
         """ほわさんを呼び出す"""
-        howa = ['https://gyazo.com/2e64e20055545d61110c008050a8a016','https://gyazo.com/8d95c633faaf0a589631241d2274703f','https://gyazo.com/3e655e7f91e586737bdd22e3d2964dcc','https://gyazo.com/572820a2a4a350187563528143aa1f28','https://gyazo.com/b17a7733d777762ba75a3c9ed8bd9a47','https://media.discordapp.net/attachments/628175073504788491/748931562325803038/image0.png','https://cdn.discordapp.com/attachments/628175073504788491/749234343838351462/howa_1.png','https://cdn.discordapp.com/attachments/628175073504788491/749234943447793674/2020-08-29_5.png','https://i.gyazo.com/thumb/1200/db0d354a6db0f23d5551bf2e4bfb1efb-png.jpg']
+        howa = ['https://gyazo.com/2e64e20055545d61110c008050a8a016','https://gyazo.com/8d95c633faaf0a589631241d2274703f',
+                'https://gyazo.com/3e655e7f91e586737bdd22e3d2964dcc','https://gyazo.com/572820a2a4a350187563528143aa1f28',
+                'https://gyazo.com/b17a7733d777762ba75a3c9ed8bd9a47','https://media.discordapp.net/attachments/628175073504788491/748931562325803038/image0.png',
+                'https://cdn.discordapp.com/attachments/628175073504788491/749234343838351462/howa_1.png',
+                'https://cdn.discordapp.com/attachments/628175073504788491/749234943447793674/2020-08-29_5.png',
+                'https://i.gyazo.com/thumb/1200/db0d354a6db0f23d5551bf2e4bfb1efb-png.jpg','https://gyazo.com/c2d098590fe775ee921fce983d72e2e4',
+                'https://gyazo.com/dee2d094a1ad9a89fee2012c38248783','https://gyazo.com/4d5dd57a27255343f2310c999c0e1261',
+                'https://gyazo.com/a01dd357ce772dae25305dd9700f5377']
         await ctx.send(ctx.message.author.name + 'が <@!260693854070505472> 様を呼んでいるよ！ \n ' + random.choice(howa) )
         await ctx.message.delete()
     @commands.command()
