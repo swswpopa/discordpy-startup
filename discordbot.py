@@ -294,10 +294,16 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.message.delete()     
         
     @commands.command()
+    async def tinpokopon(self,ctx):
+        """プリコネスプシ"""
+        await ctx.send('https://cdn.discordapp.com/attachments/638718958819606549/749276683302862891/pokopon.gif')
+        await ctx.message.delete()
+    @commands.command()
     async def supusi(self,ctx):
         """プリコネスプシ"""
         await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://docs.google.com/spreadsheets/d/1nCdtFHS-60WcRZDx8hTXHFm3mPuEqefntQxeRfM2Lv0/edit#gid=632518118')
         await ctx.message.delete()
+    
         
     @commands.command()
     async def howa(self,ctx):
