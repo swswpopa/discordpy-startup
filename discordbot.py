@@ -349,6 +349,11 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """わるいね収容者リスト"""
         await ctx.send('https://twitter.com/i/lists/1227212620387643392' )
         await ctx.message.delete()
+    @commands.command()
+    async def sime(self,ctx):
+        """〆"""
+        await ctx.send('https://cdn.discordapp.com/attachments/668715128627396640/749583481121669120/EglWTaVVgAEIIBG.png' )
+        await ctx.message.delete()
     
     
 
