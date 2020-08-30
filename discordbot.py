@@ -359,8 +359,6 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """ぎょうさ"""
         await ctx.send('https://cdn.discordapp.com/attachments/638718958819606549/749650658784837753/E9A483E5AD90E38391E383AAE38383E381A8E38195E3819BE3819FE3818FE381A601.png' )
         await ctx.message.delete()
-    
-    
     @commands.command()
     async def gacha(self,ctx):
         """ガチャシミュレータ"""
@@ -368,7 +366,15 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.send(ctx.message.author.name + 'は' + random.choice(gacha) + '連で出ます' )
         await ctx.message.delete()
    
-        
+    @commands.command()
+    async def google(ctx, g):
+            count = 1
+            for url in search(g, lang='jp', num=1):
+                await ctx.channel.send (url)
+                count + 1
+                if(count == 1):
+                    break
+
         
 
 class Game(commands.Cog, name = 'おもちゃ'):
