@@ -4,7 +4,6 @@ import random
 import os
 import math
 import traceback
-from googlesearch import search
 from datetime import datetime
 from discord.ext import commands
 from discord.ext import tasks
@@ -367,15 +366,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         gacha = ['10','20','30','40','50','60','70','80','90','100','110','120','130','140','150','160','170','180','190','200','210','220','230','240','250','260','270','280','290','300']
         await ctx.send(ctx.message.author.name + 'は' + random.choice(gacha) + '連で出ます' )
         await ctx.message.delete()
-   
-    @commands.command()
-    async def google(ctx, g):
-            count = 1
-            for url in search(g, lang='jp', num=1):
-                await ctx.channel.send (url)
-                count + 1
-                if(count == 1):
-                    break
+  
 
         
 
