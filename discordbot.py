@@ -355,14 +355,9 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.send('https://cdn.discordapp.com/attachments/668715128627396640/749583481121669120/EglWTaVVgAEIIBG.png' )
         await ctx.message.delete()
     @commands.command()
-    async def gacha(self,ctx):
-        """〆"""
-        await ctx.send(ctx.message.author.name + "はラビリスタ天井です" )
-        await ctx.message.delete()
-    @commands.command()
-    async def gacha1919(self,ctx):
-        """〆"""
-        await ctx.send(ctx.message.author.name + "は10連でラビリスタがでます" )
+    async def gyouza(self,ctx):
+        """ぎょうさ"""
+        await ctx.send('https://cdn.discordapp.com/attachments/638718958819606549/749650658784837753/E9A483E5AD90E38391E383AAE38383E381A8E38195E3819BE3819FE3818FE381A601.png' )
         await ctx.message.delete()
     
     
