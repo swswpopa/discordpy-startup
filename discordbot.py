@@ -327,7 +327,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
                 'https://i.gyazo.com/thumb/1200/db0d354a6db0f23d5551bf2e4bfb1efb-png.jpg','https://gyazo.com/c2d098590fe775ee921fce983d72e2e4',
                 'https://gyazo.com/dee2d094a1ad9a89fee2012c38248783','https://gyazo.com/4d5dd57a27255343f2310c999c0e1261',
                 'https://gyazo.com/a01dd357ce772dae25305dd9700f5377']
-        await ctx.send(ctx.message.author.name + 'が <@!260693854070505472> 様を呼んでいるよ！ \n ' + random.choice(howa) )
+        await ctx.send(ctx.message.author.name + 'がほわ様を呼んでいるよ！ \n ' + random.choice(howa) )
         await ctx.message.delete()
     @commands.command()
     async def sarunokuruma(self,ctx):
