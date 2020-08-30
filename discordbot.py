@@ -4,6 +4,7 @@ import random
 import os
 import math
 import traceback
+from googlesearch import search
 from datetime import datetime
 from discord.ext import tasks
 
