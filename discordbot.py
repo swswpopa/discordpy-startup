@@ -305,7 +305,16 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://docs.google.com/spreadsheets/d/1nCdtFHS-60WcRZDx8hTXHFm3mPuEqefntQxeRfM2Lv0/edit#gid=632518118')
         await ctx.message.delete()
     
-        
+    @commands.command()
+    async def saru(self,ctx):
+        """さるさんを呼び出す"""
+        saru = [
+                'https://img.huffingtonpost.com/asset/5c63b0b72000008b026e784d.jpeg?ops=scalefit_960_noupscale',
+                'https://tenor.com/view/monkey-laughing-lol-laughing-hysterically-gif-17632955',
+                'https://cdn.discordapp.com/attachments/638718958819606549/749243434673635359/85635abe435992f4abf56c529f4b2be7.png',
+                'https://tenor.com/view/boat-monkey-driving-monkey-monkey-driving-boat-funny-monkey-gif-5232687']
+        await ctx.send(random.choice(saru) )
+        await ctx.message.delete() 
     @commands.command()
     async def howa(self,ctx):
         """ほわさんを呼び出す"""
