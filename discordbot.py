@@ -333,7 +333,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def sarunokuruma(self,ctx):
         """さるさんが以前乗っていたくるま"""
-        await ctx.send('https://twitter.com/i/status/1229349521227837441' )
+        await ctx.send('https://img.gifmagazine.net/gifmagazine/images/3083728/original.gif' )
         await ctx.message.delete()
     @commands.command()
     async def ritoriri(self,ctx):
