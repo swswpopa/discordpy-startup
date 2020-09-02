@@ -376,7 +376,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     async def gachapopimasa(self,ctx):
         """ガチャシミュレータ"""
         
-        await ctx.send(ctx.message.author.name + 'は単発で出ます' )
+        await ctx.send('ぽぴまさは単発で出ます' )
         await ctx.message.delete()
   
 
