@@ -174,7 +174,7 @@ class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
     @commands.command()
     async def erogaki(self,ctx):
         """アカリ(エロガキ)"""
-        await ctx.send('https://gyazo.com/0fa628c9a38b842fb48ab404cc57f6b5')
+        await ctx.send('https://gyazo.com/0fa628c9a38b842fb48ab404cc57f6b5 \n S1:着地で押す')
         await ctx.message.delete() 
 
 
