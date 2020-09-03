@@ -170,6 +170,12 @@ class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
         """チエル"""
         await ctx.send('https://gyazo.com/828212c3cc6121942c37c8788425d5d2')
         await ctx.message.delete() 
+        
+    @commands.command()
+    async def erogaki(self,ctx):
+        """アカリ(エロガキ)"""
+        await ctx.send('https://gyazo.com/0fab8a4ca7dad940ea3b206108367d5d')
+        await ctx.message.delete() 
 
 
 class DamageCalc(commands.Cog, name = '持ち越し計算機'):
