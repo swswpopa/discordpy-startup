@@ -299,7 +299,12 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         """ケインコスギの物まね"""
         await ctx.send('https://www.youtube.com/watch?v=ZX5ctEzgbpw') 
         await ctx.message.delete()     
-    
+    @commands.command()
+    async def tensura(self,ctx):
+        """転スラwiki"""
+        await ctx.send('https://ja.wikipedia.org/wiki/%E8%BB%A2%E7%94%9F%E3%81%97%E3%81%9F%E3%82%89%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%A0%E3%81%A0%E3%81%A3%E3%81%9F%E4%BB%B6') 
+        await ctx.message.delete()       
+
         
     @commands.command()
     async def tinpokopon(self,ctx):
