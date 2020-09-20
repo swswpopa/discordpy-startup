@@ -176,6 +176,11 @@ class SkillMotionGIF(commands.Cog, name = 'スキルモーション'):
         """アカリ(エロガキ)"""
         await ctx.send('https://gyazo.com/0fa628c9a38b842fb48ab404cc57f6b5 \n S1:着地で押す')
         await ctx.message.delete() 
+    @commands.command()
+    async def rabirisuta(self,ctx):
+        """ラビリスタ"""
+        await ctx.send('https://i.gyazo.com/83468807130359544b8f7c987f5fabc3 \n https://i.gyazo.com/26bb2398837fb68c2fbd0bae128c88a7')
+        await ctx.message.delete()
 
 
 class DamageCalc(commands.Cog, name = '持ち越し計算機'):
