@@ -14,6 +14,8 @@ ID_clanmember = 666361330827132979
 
 prefix = '/'
 token = os.environ['DISCORD_BOT_TOKEN']
+# 接続に必要なオブジェクトを生成
+client = discord.Client()
 
 
         # プリコネキャラ
@@ -422,7 +424,20 @@ class Game(commands.Cog, name = 'おもちゃ'):
         choice = random.choice(janken) #randomモジュールでunseiリストからランダムに一つを選出
         await ctx.send(choice)
 
-
+# 60秒に一回ループ
+@tasks.loop(seconds=60)
+async def loop():
+    # 現在の時刻
+    now = datetime.now().strftime('%H:%M')
+    if now == '07:35':
+        guild = client.get_guild(payload.guild_id)  
+        member = guild.get_member(payload.user_id)  
+        role = guild.get_role(ID_role_1)
+        if not member.bot:            
+            await member.add_roles(role)  
+#ループ処理実行
+loop.start()            
+        
 bot = commands.Bot(command_prefix=prefix)
 bot.add_cog(SkillMotionGIF(bot=bot))
 bot.add_cog(DamageCalc(bot=bot))
