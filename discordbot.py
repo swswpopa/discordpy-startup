@@ -9,13 +9,8 @@ from discord.ext import commands
 from discord.ext import tasks
 
 
-ID_readme = 768272323341320232
-ID_clanmember = 666361330827132979
-
 prefix = '/'
 token = os.environ['DISCORD_BOT_TOKEN']
-# 接続に必要なオブジェクトを生成
-client = discord.Client()
 
 
         # プリコネキャラ
