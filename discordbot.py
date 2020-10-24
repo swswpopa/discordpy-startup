@@ -315,8 +315,7 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
     @commands.command()
     async def tinpokopon(self,ctx):
         """ちんぽこぽん"""
-        await ctx.send('https://cdn.discordapp.com/attachments/638718958819606549/749276683302862891/pokopon.gif')
-        await asyncio.sleep(5)        
+        await ctx.send('https://cdn.discordapp.com/attachments/638718958819606549/749276683302862891/pokopon.gif')   
         await ctx.message.delete()
     @commands.command()
     async def supusi(self,ctx):
