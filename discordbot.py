@@ -8,7 +8,11 @@ from datetime import datetime
 from discord.ext import commands
 from discord.ext import tasks
 
-
+ID_role_1 = 767249291730747403
+ID_role_2 = 767200011749949470
+ID_role_3 = 767200106557865985
+ID_role_tk = 767200196827676683
+ID_clanmember = 666361330827132979
 prefix = '/'
 token = os.environ['DISCORD_BOT_TOKEN']
 
@@ -421,13 +425,18 @@ class Game(commands.Cog, name = 'おもちゃ'):
         
     @commands.command()  
     @commands.has_permissions(administrator=True)  
-    async def rollreset(ctx):  
+    async def rollreset(ctx):
+        # role1 = discord.utils.find(lambda r: r.name == '1凸', ctx.guild.roles)  
+        # role2 = discord.utils.find(lambda r: r.name == '2凸', ctx.guild.roles) 
+        # role3 = discord.utils.find(lambda r: r.name == '3凸', ctx.guild.roles) 
+        # roletk = discord.utils.find(lambda r: r.name == 'タスクキル済', ctx.guild.roles)  
+        role1 = ctx.guild.get_role(ID_role_1)
+        role2 = ctx.guild.get_role(ID_role_2)
+        role3 = ctx.guild.get_role(ID_role_3)
+        roletk = ctx.guild.get_role(ID_role_tk) 
         for member in ctx.guild.members:  
             if not member.bot:  
-                role1 = discord.utils.find(lambda r: r.name == '1凸', ctx.guild.roles)  
-                role2 = discord.utils.find(lambda r: r.name == '2凸', ctx.guild.roles) 
-                role3 = discord.utils.find(lambda r: r.name == '3凸', ctx.guild.roles) 
-                roletk = discord.utils.find(lambda r: r.name == 'タスクキル済', ctx.guild.roles) 
+                
                 await member.remove_roles(role1)
                 await member.remove_roles(role2)  
                 await member.remove_roles(role3)
