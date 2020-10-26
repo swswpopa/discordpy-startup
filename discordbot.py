@@ -418,7 +418,24 @@ class Game(commands.Cog, name = 'おもちゃ'):
         janken = ["<:31lolgoo:666949640955887628>", "✌️ ", "🖐️"]
         choice = random.choice(janken) #randomモジュールでunseiリストからランダムに一つを選出
         await ctx.send(choice)
-         
+        
+    @client.command()  
+    @commands.has_permissions(administrator=True)  
+    async def set_members(ctx):  
+        for member in ctx.guild.members:  
+            if not member.bot:  
+                role1 = discord.utils.find(lambda r: r.name == '1凸', ctx.guild.roles)  
+                role2 = discord.utils.find(lambda r: r.name == '2凸', ctx.guild.roles) 
+                role3 = discord.utils.find(lambda r: r.name == '3凸', ctx.guild.roles) 
+                roletk = discord.utils.find(lambda r: r.name == 'タスクキル済', ctx.guild.roles) 
+                await member.remove_roles(role1)
+                await member.remove_roles(role2)  
+                await member.remove_roles(role3)
+                await member.remove_roles(roletk)
+                await ctx.send('本日の凸状況をすべてリセットしました')
+                await asyncio.sleep(5) 
+                await ctx.message.delete()
+                
         
 bot = commands.Bot(command_prefix=prefix)
 bot.add_cog(SkillMotionGIF(bot=bot))
