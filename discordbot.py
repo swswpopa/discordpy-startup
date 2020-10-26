@@ -426,7 +426,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         
     @commands.command()  
     @commands.has_permissions(administrator=True)  
-    async def rollreset(ctx):
+    async def rollreset(self, ctx):
         # role1 = discord.utils.find(lambda r: r.name == '1凸', ctx.guild.roles)  
         # role2 = discord.utils.find(lambda r: r.name == '2凸', ctx.guild.roles) 
         # role3 = discord.utils.find(lambda r: r.name == '3凸', ctx.guild.roles) 
@@ -449,7 +449,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         await ctx.message.delete()
                 
     @commands.command()
-    async def roleremovetest(ctx):
+    async def roleremovetest(self, ctx):
         roletest = ctx.guild.get_role(ID_role_test)
         for member in ctx.guild.members:
             if not member.bot:
