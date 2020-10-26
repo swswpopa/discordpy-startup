@@ -421,7 +421,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         
     @client.command()  
     @commands.has_permissions(administrator=True)  
-    async def set_members(ctx):  
+    async def rollreset(ctx):  
         for member in ctx.guild.members:  
             if not member.bot:  
                 role1 = discord.utils.find(lambda r: r.name == '1凸', ctx.guild.roles)  
