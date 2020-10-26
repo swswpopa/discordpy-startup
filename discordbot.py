@@ -419,7 +419,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         choice = random.choice(janken) #randomモジュールでunseiリストからランダムに一つを選出
         await ctx.send(choice)
         
-    @client.command()  
+    @commands.command()  
     @commands.has_permissions(administrator=True)  
     async def rollreset(ctx):  
         for member in ctx.guild.members:  
