@@ -448,7 +448,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         await asyncio.sleep(5) 
         await ctx.message.delete()
                 
-    @client.command()
+    @commands.command()
     async def roleremovetest(ctx):
         roletest = ctx.guild.get_role(ID_role_test)
         for member in ctx.guild.members:
