@@ -420,7 +420,6 @@ class Game(commands.Cog, name = 'おもちゃ'):
         await ctx.send(choice)
         
     @commands.command()  
-    @commands.has_permissions(administrator=True)  
     async def rollreset(ctx):  
         for member in ctx.guild.members:  
             if not member.bot:  
