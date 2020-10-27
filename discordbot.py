@@ -205,7 +205,8 @@ class DamageCalc(commands.Cog, name = '持ち越し計算機'):
         else:
             text = "持ち越しは発生しません"
         await ctx.send(text)
-        await asyncio.sleep(10) 
+        await asyncio.sleep(10)
+        await ctx.text.delete()
         await ctx.message.delete()        
     async def gyakusan(self,ctx, boss: int, p1: int):
         """90秒計算機 /gyakusan (凸時のボスHP) (先に抜ける人の与ダメ)"""
