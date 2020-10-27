@@ -438,7 +438,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         await ctx.send(choice)
         
     @commands.command()  
-    async def rollreset(self, ctx):
+    async def rolereset(self, ctx):
         # role1 = discord.utils.find(lambda r: r.name == '1凸', ctx.guild.roles)  
         # role2 = discord.utils.find(lambda r: r.name == '2凸', ctx.guild.roles) 
         # role3 = discord.utils.find(lambda r: r.name == '3凸', ctx.guild.roles) 
