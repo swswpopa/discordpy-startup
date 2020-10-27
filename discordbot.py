@@ -212,6 +212,8 @@ class DamageCalc(commands.Cog, name = '持ち越し計算機'):
         await ctx.send(text)
         await asyncio.sleep(10)
         await ctx.message.delete()
+        sent = await ctx.send(message)
+        await sent.delete()        
     async def gyakusan(self,ctx, boss: int, p1: int):
         """90秒計算機 /gyakusan (凸時のボスHP) (先に抜ける人の与ダメ)"""
         
@@ -223,7 +225,8 @@ class DamageCalc(commands.Cog, name = '持ち越し計算機'):
         await ctx.send(text)
         await asyncio.sleep(10) 
         await ctx.message.delete()        
-
+        sent = await ctx.send(message)
+        await sent.delete()
 
 class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
 
