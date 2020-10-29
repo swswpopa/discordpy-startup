@@ -451,7 +451,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         
         for member in ctx.guild.members:  
             if not member.bot:  
-                
+                await ctx.send(member.name)
                 await member.remove_roles(role1)
                 await member.remove_roles(role2)  
                 await member.remove_roles(role3)
