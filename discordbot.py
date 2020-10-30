@@ -458,8 +458,6 @@ class Game(commands.Cog, name = 'おもちゃ'):
                 await member.remove_roles(role3)
                 await member.remove_roles(roletk)
         await ctx.send('本日の凸状況をすべてリセットしました')
-        await asyncio.sleep(5) 
-        await ctx.message.delete()
                 
     @commands.command()
     async def roleremovetest(self, ctx):
