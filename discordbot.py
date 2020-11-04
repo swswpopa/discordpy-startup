@@ -14,6 +14,7 @@ ID_role_2 = 767200011749949470
 ID_role_3 = 767200106557865985
 ID_role_tk = 767200196827676683
 ID_clanmember = 666361330827132979
+ID_readme = 768272323341320232
 ID_role_test = 760094885364629524
 prefix = '/'
 token = os.environ['DISCORD_BOT_TOKEN']
@@ -470,17 +471,7 @@ class Game(commands.Cog, name = 'おもちゃ'):
         await asyncio.sleep(5) 
         await ctx.message.delete()
 
-    @bot.event  
-    async def on_raw_reaction_add(payload):  
-        channel = client.get_channel(payload.channel_id)
-        if channel.id == ID_readme:
-            #ロールの付与
-            if str(payload.emoji) == '<:61ok:728923368870510605>':
-                guild = client.get_guild(payload.guild_id)  
-                member = guild.get_member(payload.user_id)  
-                role = guild.get_role(ID_clanmember)
-                if not member.bot:            
-                    await member.add_roles(role)               
+         
         
 bot = commands.Bot(command_prefix=prefix)
 bot.add_cog(SkillMotionGIF(bot=bot))
@@ -490,3 +481,17 @@ bot.add_cog(Game(bot=bot))
 
 bot.run(token)        
 
+
+client = discord.Client()
+    @client.event  
+    async def on_raw_reaction_add(payload):  
+        channel = client.get_channel(payload.channel_id)
+        if channel.id == ID_readme:
+            #ロールの付与
+            if str(payload.emoji) == '<:61ok:728923368870510605>':
+                guild = client.get_guild(payload.guild_id)  
+                member = guild.get_member(payload.user_id)  
+                role = guild.get_role(ID_clanmember)
+                if not member.bot:            
+                    await member.add_roles(role)     
+client.run(token)  
