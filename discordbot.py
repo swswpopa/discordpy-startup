@@ -7,6 +7,7 @@ import traceback
 from datetime import datetime
 from discord.ext import commands
 from discord.ext import tasks
+import threading
 
 ID_role_1 = 767249291730747403
 ID_role_2 = 767200011749949470
