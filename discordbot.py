@@ -1,6 +1,8 @@
 from discord.ext import commands
 import asyncio
 import random
+intent=discord.Intents.all()
+intents.typing = False
 import os
 import math
 import traceback
