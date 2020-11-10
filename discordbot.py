@@ -354,6 +354,12 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.send(random.choice(saru) )
         await ctx.message.delete() 
     @commands.command()
+    async def gorilla(self,ctx):
+        """ローリングゴリラ"""
+        spingorilla = ['https://media1.tenor.com/images/d6efcdae8517b3f840b825171799b862/tenor.gif?itemid=17292343','https://media1.tenor.com/images/7986eaf1e2c4adcec62bb2276c18ddf4/tenor.gif?itemid=16499669']
+        await ctx.send(random.choice(spingorilla) )
+        await ctx.message.delete()    
+    @commands.command()
     async def howa(self,ctx):
         """ほわさんを呼び出す"""
         howa = ['https://gyazo.com/2e64e20055545d61110c008050a8a016','https://gyazo.com/8d95c633faaf0a589631241d2274703f',
