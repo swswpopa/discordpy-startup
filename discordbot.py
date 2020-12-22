@@ -389,6 +389,11 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.send('https://media.discordapp.net/attachments/668715128627396640/749213459954270208/image0.jpg' )
         await ctx.message.delete()
     @commands.command()
+    async def kuritorisu(self,ctx):
+        """クリスマストリスターナ"""
+        await ctx.send('https://gyazo.com/c5a65d91fd08167cc4aabeea55b047fc' )
+        await ctx.message.delete()
+    @commands.command()
     async def waruine(self,ctx):
         """わるいね収容者リスト"""
         await ctx.send('https://twitter.com/i/lists/1227212620387643392' )
