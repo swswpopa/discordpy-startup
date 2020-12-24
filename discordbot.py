@@ -404,6 +404,11 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.send('https://www.youtube.com/watch?v=GhxqIITtTtU' )
         await ctx.message.delete()
     @commands.command()
+    async def gemagema(self,ctx):
+        """社会不適合者"""
+        await ctx.send('https://discordapp.com/channels/620957163992383500/638718958819606549/791677634127200307' )
+        await ctx.message.delete()  
+    @commands.command()
     async def sime(self,ctx):
         """〆"""
         await ctx.send('https://cdn.discordapp.com/attachments/668715128627396640/749583481121669120/EglWTaVVgAEIIBG.png' )
