@@ -256,6 +256,11 @@ class BestUrl(commands.Cog, name = 'みんなのおすすめ'):
         await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/')
         await ctx.message.delete()
     @commands.command()
+    async def avabox(self,ctx):
+        """avaboxページ"""
+        await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://ava.pmang.jp/avabox/boxtop')
+        await ctx.message.delete()    
+    @commands.command()
     async def patora(self,ctx):
         """周防パトラ"""
         await ctx.send(ctx.message.author.name + "さん、どうぞ！" + 'https://www.youtube.com/channel/UCeLzT-7b2PBcunJplmWtoDg \n https://twitter.com/Patra_HNST') 
